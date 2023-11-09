@@ -6,17 +6,17 @@ export default function Navbar(){
     
     return(
         <nav className="nav">
-            <Link to="/" className="site-title">Logo</Link>
+            <Link to="/demo" className="site-title">Logo</Link>
             {/* <Link to="/search" className="search-btn"><input type="text" placeholder="جستجو در" className="search-btn"/></Link> */}
             {/* <img src={search} alt="search-icon" className="icon-nav-search"/> */}
             <ul className="khadamat-area">
-               <Customurl to="/amar" >آمار تجارت</Customurl>
-                <Customurl to="/rahhal" >راه حل ها</Customurl>
-                <Customurl to="/khadamat" >خدمات</Customurl>
+               <Customurl to="/demo/amar" >آمار تجارت</Customurl>
+                <Customurl to="/demo/rahhal" >راه حل ها</Customurl>
+                <Customurl to="/demo/khadamat" >خدمات</Customurl>
             </ul>
             <ul className="login-area">
-               <img src={leftArrow} alt="left-arrow" className="icon-nav"/> <Customurl to="/more" className="login-btn">ورود</Customurl>
-                <img src={space} alt="space-rocket" className="icon-nav"/><Customurl to="/login" className="tarefe-btn">تعرفه اشتراک ها</Customurl>
+               <img src={leftArrow} alt="left-arrow" className="icon-nav"/> <Customurl to="/demo/more" className="login-btn">ورود</Customurl>
+                <img src={space} alt="space-rocket" className="icon-nav"/><Customurl to="/demo/login" className="tarefe-btn">تعرفه اشتراک ها</Customurl>
             </ul>
         </nav>
     )

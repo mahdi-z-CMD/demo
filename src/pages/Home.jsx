@@ -51,14 +51,14 @@ export default function Login() {
                     ? null
                     : item.summary.companySummary.title.toLowerCase().includes(query)
                 }).map((key)=>{
-                    if (ihastam === 2) {
+                    if (ihastam === 20) {
                         
                     }else{
                         ihastam = ihastam + 1
                         return(
                             <li>
                             <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
-                                <Card name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Card>
+                                <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
                             </Link>
                             </li>
                         )
@@ -69,15 +69,15 @@ export default function Login() {
                 ? null
                 : item.person.title.toLowerCase().includes(query)
             }).map((key)=>{
-                if (ihastam === 2) {
+                if (ihastam === 20) {
                     console.log('tamam')
                 }else{
                     ihastam = ihastam + 1
                     console.log(ihastam)
                     return(
                         <li>
-                        <Link to={`/demo/company/${key.person.title}`} className='Links'>
-                            <Card name={key.person.title} id={key.person.id} status={key.person.isVerified}></Card>
+                        <Link to={`/demo/person/${key.person.id}`} className='Links'>
+                            <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
                         </Link>
                         </li>
                     )
@@ -90,12 +90,21 @@ export default function Login() {
         </>
     )
 }
-function Card(props){
+function Cardcompany(props){
     return(
         <div className='Cards'>
         <span className="spans">نام کمپانی  : {props.name}</span>
         <span className="spans">شناسه  : {props.id}</span>
         <span className="spans">وضعیت  : {props.status}</span>
+        </div>
+    )
+}
+function Cardperson(props){
+    return(
+        <div className='Cards'>
+        <span className="spans">نام  : {props.name}</span>
+        <span className="spans">شناسه  : {props.id}</span>
+        <span className="spans">کد ملی  : {props.status}</span>
         </div>
     )
 }

@@ -8,7 +8,7 @@ export default function Companyspage(){
         <h1>{companyid}</h1>
         <ul>
         {
-            datas.companys[10100518071].companyPeople.companyDirectors.map((key)=>{
+            datas.companys[companyid].companyPeople.companyDirectors.map((key)=>{
                 return(
                     <>
                     <li>CEOs names : {key.personTitle}</li><br />

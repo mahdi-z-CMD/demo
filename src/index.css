@@ -105,6 +105,7 @@ body{
 }
 .tarefe-btn{
   transition: all .3s;
+  color: black;
   background-color: var(--tarefe-btn);
 }
 .login-btn{

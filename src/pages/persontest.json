@@ -1,4 +1,370 @@
 [
+{
+  "person": {
+    "id": 2090370181,
+    "title": "خدیجه چوپانی",
+    "pictureUrl": "https://rasmioperson.s3.ir-thr-at1.arvanstorage.ir/DefaultPerson",
+    "isVerified": false,
+    "dofollow": null,
+    "biography": {
+      "nationalId": "209037xxxx",
+      "description": null,
+      "city": "ساری",
+      "gender": null,
+      "communication": {
+        "tel": null,
+        "mobile": null,
+        "webSite": null,
+        "email": null,
+        "socialMedia": []
+      }
+    },
+    "relatedCompanies": {
+      "companiesCount": 1,
+      "ceOs": [],
+      "directors": [
+        {
+          "companyId": 14007155588,
+          "companyTitle": "باران دشت خزر گهر باران",
+          "companyPicture": "https://rasmiocompany.s3.ir-thr-at1.arvanstorage.ir/DefaultCompany",
+          "positionTitle": "عضو هییت مدیره",
+          "firstRole": "عضو هیئت مدیره",
+          "secondRole": "",
+          "representingTitle": null,
+          "representingId": null,
+          "startDate": "2017-10-22T00:00:00",
+          "endDate": "2018-10-22T00:00:00",
+          "otherPositions": [],
+          "byNewsId": 13671740
+        }
+      ],
+      "inspectorsAndOthers": []
+    },
+    "news": [
+      {
+        "id": 13671740,
+        "title": "آگهی تاسیس",
+        "description": "تاسیس شرکت سهامی خاص باران دشت خزر گهر باران درتاریخ 30/07/1396 به شماره ثبت 434 به شناسه ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> ثبت و امضا ذیل دفاترتکمیل گردیده که خلاصه آن به شرح زیر جهت اطلاع عموم آگهی میگردد. موضوع: طراحی، مشاوره، بهینه سازی، راه اندازی صنایع کارخانجات احداث گلخانه ارائه خدمات کشاورزی پخش و فروش بذر نهال گل و گیاه ماشین آلات و ادوات کشاورزی کود شیمیایی و سموم کشاورزی اجرای پروژه های مکانیزاسیون کشاورزی و زراعت مراحل کاشت، داشت و برداشت محصولات زراعی و باغی ارائه خدمات به کشاورزان نظیر تسطیح اراضی مشاوره در خصوص کشاورزی، استفاده از روش های نوین آبیاری محاسبه و طراحی بانکهای خازنی و تابلوهای plc و تابلو های مربوطه تأمین قطعات الکترو نیکی و دیجیتالی و طراحی مدارات دیجیتال و میکرو پرسسوری، سیستم های الکترونیکی سرد و گرم کننده ساختمان و سیستم های ارتباطی و رایانه ای انجام خدمات، اجرا، پیاده سازی و مشاوره حسابداری شرکتهای دولتی و غیر دولتی، سود و زیان سالانه، تامین نیروی انسانی حسابداری برای ارگانهای دولتی و غیر دولتی، رفع اختلاف و ارقام باز حسابداری، تهیه و تنظیم دفاتر و اظهارنامه مالیاتی، تهیه طرح توجیهی، مشاوره در زمینهISOانجام امور بازرگانی، تجاری، خدماتی و پیمانکاری خدمات عمومی اداری و پشتیبانی، و مشارکت در طرحهای تجاری ارگانهای دولتی و غیر دولتی انجام امور خدماتی و تأمین نیروی انسانی، ماشین نویس و بایگان حسابدار، نظافتچی، آبدارچی، باغبان،، اسباب کش، تایپ، پرینت، اسکن تأمین کارگر ساده و ماهر و پشتیبانی امور اداری و تهیه سرویس ایاب و ذهاب درون شهری و طبخ و توزیع سرویس غذا و اجرا و نگهداری فضای سبز خرید و فروش شالی برنج خوراک دام وطیور به همراه صادرات و واردات محصولات مجاز بازرگانی و وسایل و لوازم مرتبط با موضوعات شرکت در چارچوب مقررات قانونی جاری کشور: انجام امور تجاری، بازرگانی انجام امور خدماتی و پیمانکاری خدمات عمومی اداری و پشتیبانی، مشارکت در طرحهای تجاری و عمرانی، اخذ ضمانت نامه، شرکت در نمایشگاهها و همایش های داخلی و خارجی،، انعقاد قرارداد با اشخاص حقیقی و حقوقی، اخذ و اعطای نمایندگی، ترخیص کالاهای مجاز از بنادر و گمرکات و مناطق آزاد کشور، ایجاد شعب در سراسر کشور، ایجاد مراکز تجاری و تجارت الکترونیک مجاز، شرکت در مناقصه ها و مزایده ها، اخذ وام و تسهیلات از سیستم بانکی و مؤسسات مالی و اعتباری در صورت لزوم پس از اخذ مجوز ازمراجع ذیصلاح ثبت موضوع فعالیت مذکور به منزله اخذ و صدور پروانه نمی باشد. مدت: از تاریخ ثبت به مدت نامحدود مرکز اصلی: مازندران شهرستان میاندورود بخش گهرباران دهستان گهرباران شمالی آبادی برگه برگه خیابان (نوربخش) بن بست ((چوپانی)) طبقه همکف کدپستی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> سرمایه شخصیت حقوقی: مبلغ <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> ریال منقسم به هزار سهم با نام هزار ریالی که مبلغ یک میلیون ریال توسط موسسین طی گواهی بانکی شماره 519 مورخ 20/7/1396 نزد بانک ملی ایران شعبه زاغمرز بهشهر پرداخت گردید. اولین مدیران: میثم چوپانی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت رئیس هیئت مدیره و مدیرعامل سیده محبوبه موسوی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت نایب رئیس هیئت مدیره خدیجه چوپانی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت عضو هیئت مدیره. اولین دارندگان حق امضا: کلیه اوراق و اسناد بهادار و تعهد آور شرکت و اوراق عادی و اداری به امضای منفرد مدیرعامل ورئیس هیئت مدیره (آقای میثم چوپانی) همراه با مهر شرکت معتبر خواهد_بود اختیارات مدیرعامل: طبق اساسنامه بازرسین شرکت برای مدت یکسال مالی به قرار ذیل تعیین گردیدند: پژمان احسانی راد به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت بازرس اصلی ومهدی کلائی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت بازرس علی البدل. روزنامه کثیرالانتشاراطلاعات جهت درج آگهی های شرکت تعیین گردید. ش <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> اداره ثبت شرکت ها و موسسات غیرتجاری میاندورود",
+        "newsLetterDate": "2017-10-22T00:00:00",
+        "newsPaperDate": "2017-11-05T00:00:00",
+        "type": "agahi_tasis",
+        "companyPictureUrl": "https://rasmiocompany.s3.ir-thr-at1.arvanstorage.ir/DefaultCompany",
+        "companyTitle": "باران دشت خزر گهر باران",
+        "companyId": 14007155588
+      }
+    ],
+    "isValidNationalCode": true,
+    "lists": []
+  },
+  "isFollowed": false,
+  "redirect": false,
+  "advertisements": [
+    {
+      "image": "https://cdn.rasm.io/Images/Up/2cc59172-78c3-4dd1-9e7.jpg",
+      "alt": "نورا",
+      "link": "https://nuracashflow.ir/?utm_source=rasmio&utm_medium=banner&utm_campaign=tahator12mahe&utm_content=303*208",
+      "position": "A3"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/e3109301-5da3-4007-95c.gif",
+      "alt": "زیر سایه اطلاعات بمانید",
+      "link": "https://rasm.io/pricing/",
+      "position": "A3"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/15bab432-9196-4c7e-ad2.gif",
+      "alt": "تبلیغات در رسمیو",
+      "link": "https://rasm.io/about-ads/?utm_source=rasmio&utm_medium=ad-banner",
+      "position": "A2"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/88eb191e-3511-4706-baa.jpg",
+      "alt": "نسخه آزمایشی کسب و کار من",
+      "link": "edit",
+      "position": "CI1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/58b277da-80ad-45a0-843.jpg",
+      "alt": "نسخه آزمایشی کسب و کار من",
+      "link": "edit",
+      "position": "CIM1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/f39ad7a0-bb70-4cee-ae7.png",
+      "alt": "آخرین تغییرات رسمیو",
+      "link": "https://rasm.io/pricing/?utm_source=topheader&utm_medium=dashboard&utm_id=unveiling",
+      "position": "D1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/64779913-005d-4a44-b6f.webp",
+      "alt": "داشبورد- بنر",
+      "link": "www.rasm.io/pricing",
+      "position": "D1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/c9cb0332-4395-48df-984.jpg",
+      "alt": "آخرین تغییرات رسمیو",
+      "link": "https://rasm.io/pricing/?utm_source=topheader-mobile&utm_medium=dashboard&utm_id=unveiling",
+      "position": "D1M"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/d9863410-5451-4d29-8a6.jpg",
+      "alt": "لاگین",
+      "link": "/tickets/new/",
+      "position": "L"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/bfc04e69-83f6-446a-847.gif",
+      "alt": "دانش‌بنیان شوید",
+      "link": "https://irkbn.com/be-a-knowledge-base-company/?utm_source=rasmio&utm_medium=gif&utm_campaign=rasmio_irkbn",
+      "position": "A1"
+    }
+  ]
+},
+{
+  "person": {
+    "id": 2080199080,
+    "title": "میثم چوپانی",
+    "pictureUrl": "https://rasmioperson.s3.ir-thr-at1.arvanstorage.ir/DefaultPerson",
+    "isVerified": false,
+    "dofollow": null,
+    "biography": {
+      "nationalId": "208019xxxx",
+      "description": null,
+      "city": "ساری",
+      "gender": null,
+      "communication": {
+        "tel": null,
+        "mobile": null,
+        "webSite": null,
+        "email": null,
+        "socialMedia": []
+      }
+    },
+    "relatedCompanies": {
+      "companiesCount": 1,
+      "ceOs": [
+        {
+          "companyId": 14007155588,
+          "companyTitle": "باران دشت خزر گهر باران",
+          "companyPicture": "https://rasmiocompany.s3.ir-thr-at1.arvanstorage.ir/DefaultCompany",
+          "positionTitle": "رییس هییت مدیره و مدیر عامل",
+          "firstRole": "مدیرعامل",
+          "secondRole": "رئیس هیئت مدیره",
+          "representingTitle": null,
+          "representingId": null,
+          "startDate": "2017-10-22T00:00:00",
+          "endDate": "2018-10-22T00:00:00",
+          "otherPositions": [],
+          "byNewsId": 13671740
+        }
+      ],
+      "directors": [],
+      "inspectorsAndOthers": []
+    },
+    "news": [
+      {
+        "id": 13671740,
+        "title": "آگهی تاسیس",
+        "description": "تاسیس شرکت سهامی خاص باران دشت خزر گهر باران درتاریخ 30/07/1396 به شماره ثبت 434 به شناسه ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> ثبت و امضا ذیل دفاترتکمیل گردیده که خلاصه آن به شرح زیر جهت اطلاع عموم آگهی میگردد. موضوع: طراحی، مشاوره، بهینه سازی، راه اندازی صنایع کارخانجات احداث گلخانه ارائه خدمات کشاورزی پخش و فروش بذر نهال گل و گیاه ماشین آلات و ادوات کشاورزی کود شیمیایی و سموم کشاورزی اجرای پروژه های مکانیزاسیون کشاورزی و زراعت مراحل کاشت، داشت و برداشت محصولات زراعی و باغی ارائه خدمات به کشاورزان نظیر تسطیح اراضی مشاوره در خصوص کشاورزی، استفاده از روش های نوین آبیاری محاسبه و طراحی بانکهای خازنی و تابلوهای plc و تابلو های مربوطه تأمین قطعات الکترو نیکی و دیجیتالی و طراحی مدارات دیجیتال و میکرو پرسسوری، سیستم های الکترونیکی سرد و گرم کننده ساختمان و سیستم های ارتباطی و رایانه ای انجام خدمات، اجرا، پیاده سازی و مشاوره حسابداری شرکتهای دولتی و غیر دولتی، سود و زیان سالانه، تامین نیروی انسانی حسابداری برای ارگانهای دولتی و غیر دولتی، رفع اختلاف و ارقام باز حسابداری، تهیه و تنظیم دفاتر و اظهارنامه مالیاتی، تهیه طرح توجیهی، مشاوره در زمینهISOانجام امور بازرگانی، تجاری، خدماتی و پیمانکاری خدمات عمومی اداری و پشتیبانی، و مشارکت در طرحهای تجاری ارگانهای دولتی و غیر دولتی انجام امور خدماتی و تأمین نیروی انسانی، ماشین نویس و بایگان حسابدار، نظافتچی، آبدارچی، باغبان،، اسباب کش، تایپ، پرینت، اسکن تأمین کارگر ساده و ماهر و پشتیبانی امور اداری و تهیه سرویس ایاب و ذهاب درون شهری و طبخ و توزیع سرویس غذا و اجرا و نگهداری فضای سبز خرید و فروش شالی برنج خوراک دام وطیور به همراه صادرات و واردات محصولات مجاز بازرگانی و وسایل و لوازم مرتبط با موضوعات شرکت در چارچوب مقررات قانونی جاری کشور: انجام امور تجاری، بازرگانی انجام امور خدماتی و پیمانکاری خدمات عمومی اداری و پشتیبانی، مشارکت در طرحهای تجاری و عمرانی، اخذ ضمانت نامه، شرکت در نمایشگاهها و همایش های داخلی و خارجی،، انعقاد قرارداد با اشخاص حقیقی و حقوقی، اخذ و اعطای نمایندگی، ترخیص کالاهای مجاز از بنادر و گمرکات و مناطق آزاد کشور، ایجاد شعب در سراسر کشور، ایجاد مراکز تجاری و تجارت الکترونیک مجاز، شرکت در مناقصه ها و مزایده ها، اخذ وام و تسهیلات از سیستم بانکی و مؤسسات مالی و اعتباری در صورت لزوم پس از اخذ مجوز ازمراجع ذیصلاح ثبت موضوع فعالیت مذکور به منزله اخذ و صدور پروانه نمی باشد. مدت: از تاریخ ثبت به مدت نامحدود مرکز اصلی: مازندران شهرستان میاندورود بخش گهرباران دهستان گهرباران شمالی آبادی برگه برگه خیابان (نوربخش) بن بست ((چوپانی)) طبقه همکف کدپستی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> سرمایه شخصیت حقوقی: مبلغ <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> ریال منقسم به هزار سهم با نام هزار ریالی که مبلغ یک میلیون ریال توسط موسسین طی گواهی بانکی شماره 519 مورخ 20/7/1396 نزد بانک ملی ایران شعبه زاغمرز بهشهر پرداخت گردید. اولین مدیران: میثم چوپانی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت رئیس هیئت مدیره و مدیرعامل سیده محبوبه موسوی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت نایب رئیس هیئت مدیره خدیجه چوپانی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت عضو هیئت مدیره. اولین دارندگان حق امضا: کلیه اوراق و اسناد بهادار و تعهد آور شرکت و اوراق عادی و اداری به امضای منفرد مدیرعامل ورئیس هیئت مدیره (آقای میثم چوپانی) همراه با مهر شرکت معتبر خواهد_بود اختیارات مدیرعامل: طبق اساسنامه بازرسین شرکت برای مدت یکسال مالی به قرار ذیل تعیین گردیدند: پژمان احسانی راد به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت بازرس اصلی ومهدی کلائی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت بازرس علی البدل. روزنامه کثیرالانتشاراطلاعات جهت درج آگهی های شرکت تعیین گردید. ش <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> اداره ثبت شرکت ها و موسسات غیرتجاری میاندورود",
+        "newsLetterDate": "2017-10-22T00:00:00",
+        "newsPaperDate": "2017-11-05T00:00:00",
+        "type": "agahi_tasis",
+        "companyPictureUrl": "https://rasmiocompany.s3.ir-thr-at1.arvanstorage.ir/DefaultCompany",
+        "companyTitle": "باران دشت خزر گهر باران",
+        "companyId": 14007155588
+      }
+    ],
+    "isValidNationalCode": true,
+    "lists": []
+  },
+  "isFollowed": false,
+  "redirect": false,
+  "advertisements": [
+    {
+      "image": "https://cdn.rasm.io/Images/Up/2cc59172-78c3-4dd1-9e7.jpg",
+      "alt": "نورا",
+      "link": "https://nuracashflow.ir/?utm_source=rasmio&utm_medium=banner&utm_campaign=tahator12mahe&utm_content=303*208",
+      "position": "A3"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/e3109301-5da3-4007-95c.gif",
+      "alt": "زیر سایه اطلاعات بمانید",
+      "link": "https://rasm.io/pricing/",
+      "position": "A3"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/15bab432-9196-4c7e-ad2.gif",
+      "alt": "تبلیغات در رسمیو",
+      "link": "https://rasm.io/about-ads/?utm_source=rasmio&utm_medium=ad-banner",
+      "position": "A2"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/88eb191e-3511-4706-baa.jpg",
+      "alt": "نسخه آزمایشی کسب و کار من",
+      "link": "edit",
+      "position": "CI1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/58b277da-80ad-45a0-843.jpg",
+      "alt": "نسخه آزمایشی کسب و کار من",
+      "link": "edit",
+      "position": "CIM1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/f39ad7a0-bb70-4cee-ae7.png",
+      "alt": "آخرین تغییرات رسمیو",
+      "link": "https://rasm.io/pricing/?utm_source=topheader&utm_medium=dashboard&utm_id=unveiling",
+      "position": "D1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/64779913-005d-4a44-b6f.webp",
+      "alt": "داشبورد- بنر",
+      "link": "www.rasm.io/pricing",
+      "position": "D1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/c9cb0332-4395-48df-984.jpg",
+      "alt": "آخرین تغییرات رسمیو",
+      "link": "https://rasm.io/pricing/?utm_source=topheader-mobile&utm_medium=dashboard&utm_id=unveiling",
+      "position": "D1M"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/d9863410-5451-4d29-8a6.jpg",
+      "alt": "لاگین",
+      "link": "/tickets/new/",
+      "position": "L"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/bfc04e69-83f6-446a-847.gif",
+      "alt": "دانش‌بنیان شوید",
+      "link": "https://irkbn.com/be-a-knowledge-base-company/?utm_source=rasmio&utm_medium=gif&utm_campaign=rasmio_irkbn",
+      "position": "A1"
+    }
+  ]
+},
+{
+  "person": {
+    "id": 2110563451,
+    "title": "سیده محبوبه موسوی",
+    "pictureUrl": "https://rasmioperson.s3.ir-thr-at1.arvanstorage.ir/DefaultPerson",
+    "isVerified": false,
+    "dofollow": true,
+    "biography": {
+      "nationalId": "211056xxxx",
+      "description": null,
+      "city": "گرگان",
+      "gender": null,
+      "communication": {
+        "tel": null,
+        "mobile": null,
+        "webSite": null,
+        "email": null,
+        "socialMedia": []
+      }
+    },
+    "relatedCompanies": {
+      "companiesCount": 1,
+      "ceOs": [
+        {
+          "companyId": 14007155588,
+          "companyTitle": "باران دشت خزر گهر باران",
+          "companyPicture": "https://rasmiocompany.s3.ir-thr-at1.arvanstorage.ir/DefaultCompany",
+          "positionTitle": "نایب رییس هییت مدیره",
+          "firstRole": "نائب رئیس هیئت مدیره",
+          "secondRole": "",
+          "representingTitle": null,
+          "representingId": null,
+          "startDate": "2017-10-22T00:00:00",
+          "endDate": "2018-10-22T00:00:00",
+          "otherPositions": [],
+          "byNewsId": 13671740
+        }
+      ],
+      "directors": [],
+      "inspectorsAndOthers": []
+    },
+    "news": [
+      {
+        "id": 13671740,
+        "title": "آگهی تاسیس",
+        "description": "تاسیس شرکت سهامی خاص باران دشت خزر گهر باران درتاریخ 30/07/1396 به شماره ثبت 434 به شناسه ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> ثبت و امضا ذیل دفاترتکمیل گردیده که خلاصه آن به شرح زیر جهت اطلاع عموم آگهی میگردد. موضوع: طراحی، مشاوره، بهینه سازی، راه اندازی صنایع کارخانجات احداث گلخانه ارائه خدمات کشاورزی پخش و فروش بذر نهال گل و گیاه ماشین آلات و ادوات کشاورزی کود شیمیایی و سموم کشاورزی اجرای پروژه های مکانیزاسیون کشاورزی و زراعت مراحل کاشت، داشت و برداشت محصولات زراعی و باغی ارائه خدمات به کشاورزان نظیر تسطیح اراضی مشاوره در خصوص کشاورزی، استفاده از روش های نوین آبیاری محاسبه و طراحی بانکهای خازنی و تابلوهای plc و تابلو های مربوطه تأمین قطعات الکترو نیکی و دیجیتالی و طراحی مدارات دیجیتال و میکرو پرسسوری، سیستم های الکترونیکی سرد و گرم کننده ساختمان و سیستم های ارتباطی و رایانه ای انجام خدمات، اجرا، پیاده سازی و مشاوره حسابداری شرکتهای دولتی و غیر دولتی، سود و زیان سالانه، تامین نیروی انسانی حسابداری برای ارگانهای دولتی و غیر دولتی، رفع اختلاف و ارقام باز حسابداری، تهیه و تنظیم دفاتر و اظهارنامه مالیاتی، تهیه طرح توجیهی، مشاوره در زمینهISOانجام امور بازرگانی، تجاری، خدماتی و پیمانکاری خدمات عمومی اداری و پشتیبانی، و مشارکت در طرحهای تجاری ارگانهای دولتی و غیر دولتی انجام امور خدماتی و تأمین نیروی انسانی، ماشین نویس و بایگان حسابدار، نظافتچی، آبدارچی، باغبان،، اسباب کش، تایپ، پرینت، اسکن تأمین کارگر ساده و ماهر و پشتیبانی امور اداری و تهیه سرویس ایاب و ذهاب درون شهری و طبخ و توزیع سرویس غذا و اجرا و نگهداری فضای سبز خرید و فروش شالی برنج خوراک دام وطیور به همراه صادرات و واردات محصولات مجاز بازرگانی و وسایل و لوازم مرتبط با موضوعات شرکت در چارچوب مقررات قانونی جاری کشور: انجام امور تجاری، بازرگانی انجام امور خدماتی و پیمانکاری خدمات عمومی اداری و پشتیبانی، مشارکت در طرحهای تجاری و عمرانی، اخذ ضمانت نامه، شرکت در نمایشگاهها و همایش های داخلی و خارجی،، انعقاد قرارداد با اشخاص حقیقی و حقوقی، اخذ و اعطای نمایندگی، ترخیص کالاهای مجاز از بنادر و گمرکات و مناطق آزاد کشور، ایجاد شعب در سراسر کشور، ایجاد مراکز تجاری و تجارت الکترونیک مجاز، شرکت در مناقصه ها و مزایده ها، اخذ وام و تسهیلات از سیستم بانکی و مؤسسات مالی و اعتباری در صورت لزوم پس از اخذ مجوز ازمراجع ذیصلاح ثبت موضوع فعالیت مذکور به منزله اخذ و صدور پروانه نمی باشد. مدت: از تاریخ ثبت به مدت نامحدود مرکز اصلی: مازندران شهرستان میاندورود بخش گهرباران دهستان گهرباران شمالی آبادی برگه برگه خیابان (نوربخش) بن بست ((چوپانی)) طبقه همکف کدپستی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> سرمایه شخصیت حقوقی: مبلغ <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> ریال منقسم به هزار سهم با نام هزار ریالی که مبلغ یک میلیون ریال توسط موسسین طی گواهی بانکی شماره 519 مورخ 20/7/1396 نزد بانک ملی ایران شعبه زاغمرز بهشهر پرداخت گردید. اولین مدیران: میثم چوپانی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت رئیس هیئت مدیره و مدیرعامل سیده محبوبه موسوی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت نایب رئیس هیئت مدیره خدیجه چوپانی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت عضو هیئت مدیره. اولین دارندگان حق امضا: کلیه اوراق و اسناد بهادار و تعهد آور شرکت و اوراق عادی و اداری به امضای منفرد مدیرعامل ورئیس هیئت مدیره (آقای میثم چوپانی) همراه با مهر شرکت معتبر خواهد_بود اختیارات مدیرعامل: طبق اساسنامه بازرسین شرکت برای مدت یکسال مالی به قرار ذیل تعیین گردیدند: پژمان احسانی راد به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت بازرس اصلی ومهدی کلائی به شماره ملی <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> به سمت بازرس علی البدل. روزنامه کثیرالانتشاراطلاعات جهت درج آگهی های شرکت تعیین گردید. ش <a href='javascript:window.ShowLogin()' class='badge badge-pill badge-success'>وارد شوید</a> اداره ثبت شرکت ها و موسسات غیرتجاری میاندورود",
+        "newsLetterDate": "2017-10-22T00:00:00",
+        "newsPaperDate": "2017-11-05T00:00:00",
+        "type": "agahi_tasis",
+        "companyPictureUrl": "https://rasmiocompany.s3.ir-thr-at1.arvanstorage.ir/DefaultCompany",
+        "companyTitle": "باران دشت خزر گهر باران",
+        "companyId": 14007155588
+      }
+    ],
+    "isValidNationalCode": true,
+    "lists": []
+  },
+  "isFollowed": false,
+  "redirect": false,
+  "advertisements": [
+    {
+      "image": "https://cdn.rasm.io/Images/Up/2cc59172-78c3-4dd1-9e7.jpg",
+      "alt": "نورا",
+      "link": "https://nuracashflow.ir/?utm_source=rasmio&utm_medium=banner&utm_campaign=tahator12mahe&utm_content=303*208",
+      "position": "A3"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/e3109301-5da3-4007-95c.gif",
+      "alt": "زیر سایه اطلاعات بمانید",
+      "link": "https://rasm.io/pricing/",
+      "position": "A3"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/15bab432-9196-4c7e-ad2.gif",
+      "alt": "تبلیغات در رسمیو",
+      "link": "https://rasm.io/about-ads/?utm_source=rasmio&utm_medium=ad-banner",
+      "position": "A2"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/88eb191e-3511-4706-baa.jpg",
+      "alt": "نسخه آزمایشی کسب و کار من",
+      "link": "edit",
+      "position": "CI1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/58b277da-80ad-45a0-843.jpg",
+      "alt": "نسخه آزمایشی کسب و کار من",
+      "link": "edit",
+      "position": "CIM1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/f39ad7a0-bb70-4cee-ae7.png",
+      "alt": "آخرین تغییرات رسمیو",
+      "link": "https://rasm.io/pricing/?utm_source=topheader&utm_medium=dashboard&utm_id=unveiling",
+      "position": "D1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/64779913-005d-4a44-b6f.webp",
+      "alt": "داشبورد- بنر",
+      "link": "www.rasm.io/pricing",
+      "position": "D1"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/c9cb0332-4395-48df-984.jpg",
+      "alt": "آخرین تغییرات رسمیو",
+      "link": "https://rasm.io/pricing/?utm_source=topheader-mobile&utm_medium=dashboard&utm_id=unveiling",
+      "position": "D1M"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/d9863410-5451-4d29-8a6.jpg",
+      "alt": "لاگین",
+      "link": "/tickets/new/",
+      "position": "L"
+    },
+    {
+      "image": "https://cdn.rasm.io/Images/Up/bfc04e69-83f6-446a-847.gif",
+      "alt": "دانش‌بنیان شوید",
+      "link": "https://irkbn.com/be-a-knowledge-base-company/?utm_source=rasmio&utm_medium=gif&utm_campaign=rasmio_irkbn",
+      "position": "A1"
+    }
+  ]
+},
     {
         "person": {
           "id": 56880766,
