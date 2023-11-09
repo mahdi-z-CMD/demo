@@ -57,7 +57,7 @@ export default function Login() {
                         ihastam = ihastam + 1
                         return(
                             <li>
-                            <Link to={`/company/${key.summary.companySummary.id}`} className='Links'>
+                            <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
                                 <Card name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Card>
                             </Link>
                             </li>
@@ -76,7 +76,7 @@ export default function Login() {
                     console.log(ihastam)
                     return(
                         <li>
-                        <Link to={`/company/${key.person.title}`} className='Links'>
+                        <Link to={`/demo/company/${key.person.title}`} className='Links'>
                             <Card name={key.person.title} id={key.person.id} status={key.person.isVerified}></Card>
                         </Link>
                         </li>
