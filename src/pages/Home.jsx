@@ -145,7 +145,7 @@ export default function Login() {
                 
             })
         }
-        <img src={adad < 2 ? arrowup : arrowdown} alt="down" className="more-btn" onClick={changelist}/>
+        <img src={adad < 2 ? arrowdown : arrowup} alt="down" className="more-btn" onClick={changelist}/>
         </ul>
         <Filterarea></Filterarea>
         </div>
