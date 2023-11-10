@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import search from '../svgs/search.svg'
 import { Link } from 'react-router-dom'
 import data from './companytest.json'
 import dataperson from './persontest.json'
+import arrowdown from './chevron-down-outline.svg'
+import arrowup from './chevron-up.svg'
 // import data from '../companyjs.json'
 export default function Login() {
     const [query, setQuery] = useState("")
@@ -143,7 +145,7 @@ export default function Login() {
                 
             })
         }
-        <li className="more-btn" onClick={changelist}>edame </li>
+        <img src={adad < 2 ? arrowup : arrowdown} alt="down" className="more-btn" onClick={changelist}/>
         </ul>
         <Filterarea></Filterarea>
         </div>
