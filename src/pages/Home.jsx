@@ -9,7 +9,9 @@ export default function Login() {
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
     const [selected, setSelected] = useState(2);
+    const [adad, setAdad] = useState(0)
     let ihastam = 0
+    console.log(adad)
     const onChange1 = () => {
         setInputValue1(inputValue1)
         setSelected(1)
@@ -51,7 +53,7 @@ export default function Login() {
                     ? null
                     : item.summary.companySummary.title.toLowerCase().includes(query)
                 }).map((key)=>{
-                    if (ihastam === 20) {
+                    if (ihastam === 3) {
                         
                     }else{
                         ihastam = ihastam + 1
@@ -69,11 +71,10 @@ export default function Login() {
                 ? null
                 : item.person.title.toLowerCase().includes(query)
             }).map((key)=>{
-                if (ihastam === 20) {
+                if (ihastam === 3) {
                     console.log('tamam')
                 }else{
                     ihastam = ihastam + 1
-                    console.log(ihastam)
                     return(
                         <li>
                         <Link to={`/demo/person/${key.person.id}`} className='Links'>
@@ -84,6 +85,7 @@ export default function Login() {
                 }
             })
         }
+        <li className="more-btn">edame </li>
         </ul>
         <Filterarea></Filterarea>
         </div>

@@ -249,6 +249,14 @@ body{
   display: flex;
   justify-content: flex-end;
 }
+.more-btn{
+  display: flex;
+  margin-right: auto;
+  margin-left: 60%;
+  padding: 1%;
+  background-color: gray;
+  border-radius: 5px;
+}
 /* container end */
 
 
