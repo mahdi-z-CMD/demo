@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import search from '../svgs/search.svg'
 import { Link } from 'react-router-dom'
 import data from './companytest.json'
@@ -11,7 +11,6 @@ export default function Login() {
     const [selected, setSelected] = useState(2);
     const [adad, setAdad] = useState(0)
     let ihastam = 0
-    console.log(adad)
     const onChange1 = () => {
         setInputValue1(inputValue1)
         setSelected(1)
@@ -20,6 +19,14 @@ export default function Login() {
         setInputValue2(inputValue2)
         setSelected(2)
     };
+    const changelist = () =>{
+        if (adad < 2) {
+            setAdad(adad + 1)
+            console.log(adad)
+        }else{
+            setAdad(adad - 1)
+        }
+    }
     return(
         <>
         <div className="container">
@@ -53,17 +60,42 @@ export default function Login() {
                     ? null
                     : item.summary.companySummary.title.toLowerCase().includes(query)
                 }).map((key)=>{
-                    if (ihastam === 3) {
-                        
-                    }else{
-                        ihastam = ihastam + 1
-                        return(
-                            <li>
-                            <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
-                                <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
-                            </Link>
-                            </li>
-                        )
+                    if (adad === 0) {
+                        if (ihastam === 3) {
+                        }else{
+                            ihastam = ihastam + 1
+                            return(
+                                <li>
+                                <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
+                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
+                                </Link>
+                                </li>
+                            )
+                        }
+                    }else if(adad === 1){
+                        if (ihastam === 6) {
+                        }else{
+                            ihastam = ihastam + 1
+                            return(
+                                <li>
+                                <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
+                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
+                                </Link>
+                                </li>
+                            )
+                        }
+                    }else if(adad === 2){
+                        if (ihastam === 9) {
+                        }else{
+                            ihastam = ihastam + 1
+                            return(
+                                <li>
+                                <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
+                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
+                                </Link>
+                                </li>
+                            )
+                        }
                     }
                 })
             : dataperson.filter((item)=>{
@@ -71,21 +103,47 @@ export default function Login() {
                 ? null
                 : item.person.title.toLowerCase().includes(query)
             }).map((key)=>{
-                if (ihastam === 3) {
-                    console.log('tamam')
-                }else{
-                    ihastam = ihastam + 1
-                    return(
-                        <li>
-                        <Link to={`/demo/person/${key.person.id}`} className='Links'>
-                            <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
-                        </Link>
-                        </li>
-                    )
+                if (adad === 0) {
+                    if (ihastam === 3) {
+                    }else{
+                        ihastam = ihastam + 1
+                        return(
+                            <li>
+                            <Link to={`/demo/person/${key.person.id}`} className='Links'>
+                                <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
+                            </Link>
+                            </li>
+                        )
+                    }
+                }else if(adad === 1){
+                    if (ihastam === 6) {
+                    }else{
+                        ihastam = ihastam + 1
+                        return(
+                            <li>
+                            <Link to={`/demo/person/${key.person.id}`} className='Links'>
+                                <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
+                            </Link>
+                            </li>
+                        )
+                    }
+                }else if(adad === 2){
+                    if (ihastam === 9) {
+                    }else{
+                        ihastam = ihastam + 1
+                        return(
+                            <li>
+                            <Link to={`/demo/person/${key.person.id}`} className='Links'>
+                                <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
+                            </Link>
+                            </li>
+                        )
+                    }
                 }
+                
             })
         }
-        <li className="more-btn">edame </li>
+        <li className="more-btn" onClick={changelist}>edame </li>
         </ul>
         <Filterarea></Filterarea>
         </div>
