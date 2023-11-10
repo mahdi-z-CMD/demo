@@ -26,7 +26,7 @@ export default function Login() {
             setAdad(adad + 1)
             console.log(adad)
         }else{
-            setAdad(adad - 1)
+            setAdad(adad - 2)
         }
     }
     return(
