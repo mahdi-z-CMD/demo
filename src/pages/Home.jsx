@@ -178,11 +178,11 @@ function Filterarea(){
             <h3>حذف همه</h3>
             </div>
             <div className="options">
-                <h3>اطلاعات ثبتی و تماس</h3>
-                <h3>اطلاعات ثبتی و تماس</h3>
-                <h3>اطلاعات ثبتی و تماس</h3>
-                <h3>اطلاعات ثبتی و تماس</h3>
-                <h3>اطلاعات ثبتی و تماس</h3>
+                <h3>اطلاعات ثبتی و تماس<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
+                <h3>اطلاعات مالی<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
+                <h3>هعیت مدیره و کارکنان<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
+                <h3>مجوز و صنعت<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
+                <h3>اطلاعات جغرافیایی<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
             </div>
         </div>
     )
