@@ -27,6 +27,10 @@ const Companyspage = (()=>{
                     <span>{props.type}</span>
                 </div>
                 </div>
+                <div className="select-info">
+                <a href="/" className='select-info-btn'>اطلاعات اصلی</a>
+                <a href="/" className='select-info-btn'>اشخاص</a>
+            </div>
             </div>
         )
     })
@@ -50,10 +54,7 @@ const Companyspage = (()=>{
     return(
         <div className='company-container'>
             <Header name={datas.companys[companyid].summary.companySummary.title} type={datas.companys[companyid].summary.companySummary.summary.registrationTypeTitle}></Header>
-            <div className="select-info">
-                <a href="/" className='select-info-btn'>اطلاعات اصلی</a>
-                <a href="/" className='select-info-btn'>اشخاص</a>
-            </div>
+            
         <h1 className='sabti-h1'>اطلاعات ثبتی</h1>
            <Sabtiinfocard></Sabtiinfocard>
 

@@ -12,9 +12,10 @@
 }
 body{
   margin: 0;
+  background-color: rgba(203, 246, 255, 1);
 }
 .nav{
-  background-color: transparent;
+  background-color: white;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -22,6 +23,7 @@ body{
   gap: 2rem;
   padding: 0 2rem;
   padding-top: 1%;
+  padding-bottom: 1%;
 }
 .login-area a{
   text-decoration: none;
@@ -290,13 +292,14 @@ body{
   width: 100%;
 }
 .company-header{
-  height: 30vh;
+  height: 37vh;
   width: 80%;
   direction: rtl;
   margin-top: 3%;
-  border-bottom: 1px solid black;
   margin-right: auto;
   margin-left: auto;
+  background-color: white;
+  border-radius: 10px;
 }
 .company-header-title{
   display: flex;
@@ -316,6 +319,7 @@ body{
 .save-icon{
   margin-right:87%;
   cursor: pointer;
+  margin-top: 1%;
 }
 .icon8{
   background-color: rgba(217, 217, 217, 1);
@@ -330,14 +334,17 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  border-top: 1px solid black;
   direction: rtl;
   margin-right: 10%;
+  margin-top: 3%;
+  margin-left: 10%;
 }
 .select-info-btn{
   background-color: rgba(34, 194, 231, 1);
   padding: 0.7%;
   border-radius: 5px;
-  width: 10%;
+  width: 15%;
   margin-right: 2%;
   margin-top: 2%;
   display: flex;
@@ -354,7 +361,12 @@ body{
 .sabti-info{
   display: flex;
   direction: rtl;
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 2%;
 }
 .sabti-row{
   display: flex;
