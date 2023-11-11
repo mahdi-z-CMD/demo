@@ -336,9 +336,9 @@ body{
   justify-content: flex-start;
   border-top: 1px solid black;
   direction: rtl;
-  margin-right: 10%;
+  margin-right: 7%;
   margin-top: 3%;
-  margin-left: 10%;
+  margin-left: 7%;
 }
 .select-info-btn{
   background-color: rgba(34, 194, 231, 1);
