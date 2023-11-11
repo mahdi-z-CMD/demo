@@ -56,9 +56,8 @@ const Companyspage = (()=>{
             </div>
         <h1 className='sabti-h1'>اطلاعات ثبتی</h1>
            <Sabtiinfocard></Sabtiinfocard>
-        <ul>
-        
-        </ul>
+
+        <h1 className='sabti-h1'>اشخاص</h1>
         </div>
     )
 })

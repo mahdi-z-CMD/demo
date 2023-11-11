@@ -375,7 +375,7 @@ body{
   display: flex;
   direction: rtl;
   margin-top: 4%;
-  flex-basis: 100%;
+  flex-basis: 90%;
   font-size: 1rem;
   margin-right: 2.5%;
 }
