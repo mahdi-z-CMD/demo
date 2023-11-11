@@ -358,7 +358,7 @@ body{
 }
 .sabti-row{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   flex-wrap: wrap;
   margin-right: 12%;
@@ -368,6 +368,16 @@ body{
   direction: rtl;
   margin-top: 4%;
   flex-basis: 30%;
+  font-size: 1rem;
+  margin-right: 2.5%;
+}
+.sabti-text:last-child{
+  display: flex;
+  direction: rtl;
+  margin-top: 4%;
+  flex-basis: 100%;
+  font-size: 1rem;
+  margin-right: 2.5%;
 }
 .sabti-icon{
   margin-left: 10px;

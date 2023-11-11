@@ -34,12 +34,15 @@ const Companyspage = (()=>{
         return(
         <div className="sabti-info">
             <div className="sabti-row">
-            <span className='sabti-text'><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/calendar--v1.png" alt="calendar--v1" className='sabti-icon'/>تاریخ تاسیس: {shamsidateTasis}</span>
-            <span className='sabti-text'><img width="24" height="24" src="https://img.icons8.com/plumpy/64/company.png" alt="calendar--v1" className='sabti-icon'/>نوع شرکت: {datas.companys[companyid].summary.companySummary.summary.registrationTypeTitle}</span>
-            <span className='sabti-text'><img width="24" height="24" src="https://img.icons8.com/material-two-tone/24/ok--v1.png" alt="calendar--v1" className='sabti-icon'/>وضعیت شرکت: {datas.companys[companyid].summary.companySummary.summary.status}</span>
-            <span className='sabti-text'><img width="24" height="24" src="https://img.icons8.com/material-two-tone/24/edit-user-male.png" alt="calendar--v1" className='sabti-icon'/>شماره ثبت: {datas.companys[companyid].summary.companySummary.summary.registrationNo}</span>
-            <span className='sabti-text'><img width="24" height="24" src="https://img.icons8.com/plumpy/24/news.png" alt="calendar--v1" className='sabti-icon'/>آخرین آگهی روزنامه رسمی: {shamsidateLastnews}</span>
-            <span className='sabti-text'><img width="24" height="24" src="https://img.icons8.com/material-two-tone/24/edit-user-male.png" alt="calendar--v1" className='sabti-icon'/>شماره ثبت: {datas.companys[companyid].summary.companySummary.summary.registrationNo}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-outlined/24/calendar--v1.png" alt="calendar--v1" className='sabti-icon'/>تاریخ تاسیس: {shamsidateTasis}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/plumpy/64/company.png" alt="calendar--v1" className='sabti-icon'/>نوع شرکت: {datas.companys[companyid].summary.companySummary.summary.registrationTypeTitle}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/ok--v1.png" alt="calendar--v1" className='sabti-icon'/>وضعیت شرکت: {datas.companys[companyid].summary.companySummary.summary.status}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/edit-user-male.png" alt="calendar--v1" className='sabti-icon'/>شماره ثبت: {datas.companys[companyid].summary.companySummary.summary.registrationNo}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/plumpy/24/news.png" alt="calendar--v1" className='sabti-icon'/>آخرین آگهی روزنامه رسمی: {shamsidateLastnews}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/mailbox-with-letter.png" alt="calendar--v1" className='sabti-icon'/>کد پستی: {datas.companys[companyid].summary.companySummary.communications.postalCode}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/id-verified.png" alt="calendar--v1" className='sabti-icon'/>شناسه ملی: {datas.companys[companyid].summary.companySummary.id}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/money-bag-euro.png" alt="money-bag-euro" className='sabti-icon'/>شناسه ملی: {datas.companys[companyid].summary.companySummary.id}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/address--v1.png" alt="money-bag-euro" className='sabti-icon'/>شناسه ملی: {datas.companys[companyid].summary.companySummary.communications.address}</span>
             </div>
         </div>
         )
