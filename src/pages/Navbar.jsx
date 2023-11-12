@@ -7,8 +7,6 @@ export default function Navbar(){
     return(
         <nav className="nav">
             <Link to="/demo" className="site-title">Logo</Link>
-            {/* <Link to="/search" className="search-btn"><input type="text" placeholder="جستجو در" className="search-btn"/></Link> */}
-            {/* <img src={search} alt="search-icon" className="icon-nav-search"/> */}
             <ul className="khadamat-area">
                <Customurl to="/demo/amar" >آمار تجارت</Customurl>
                 <Customurl to="/demo/rahhal" >راه حل ها</Customurl>

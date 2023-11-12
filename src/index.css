@@ -14,6 +14,7 @@ body{
   margin: 0;
   background-color: rgba(203, 246, 255, 1);
 }
+/* navbar start */
 .nav{
   background-color: white;
   display: flex;
@@ -115,7 +116,7 @@ body{
   background-color: var(--login-btn);
   color: white;
 }
-
+/* navbar end */
 
 /* container css details  */
 .container{
@@ -263,6 +264,7 @@ body{
   width: 40px;
   height: 40px;
 }
+
 /* container end */
 
 
@@ -289,10 +291,10 @@ body{
   width: 100%;
 }
 .company-header{
-  height: 37vh;
+  height: 35vh;
   width: 80%;
   direction: rtl;
-  margin-top: 3%;
+  margin-top: 1%;
   margin-right: auto;
   margin-left: auto;
   background-color: white;
@@ -352,7 +354,7 @@ body{
 .sabti-h1{
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 2%;
   font-size: 1.5rem;
 }
 .sabti-info{
@@ -360,6 +362,7 @@ body{
   direction: rtl;
   margin-right: auto;
   margin-left: auto;
+  height: 40vh;
   width: 80%;
   background-color: white;
   border-radius: 10px;
