@@ -51,6 +51,22 @@ const Companyspage = (()=>{
         </div>
         )
     })
+    const Sabtiashkhas = ((props)=>{
+        return(
+            <div className="sabti-askhkhas-info">
+                <div className="title-cat">
+                    <h1>مدیران</h1>
+                </div>
+                <div className="title-ceo">
+                        <img width="74" height="74" src="https://img.icons8.com/pastel-glyph/64/person-male--v3.png" alt="user-male-circle--v1" className='ceo-pic'/>
+                        <div className="title-ceo-pic">
+                            <h1>{datas.companys[companyid].summary.companySummary.peopleSummary.ceo.title}</h1>
+                            <h3 className='modramel'>مدیر عامل</h3>
+                        </div>
+                </div>
+            </div>
+        )
+    })
     return(
         <div className='company-container'>
             <Header name={datas.companys[companyid].summary.companySummary.title} type={datas.companys[companyid].summary.companySummary.summary.registrationTypeTitle}></Header>
@@ -59,6 +75,7 @@ const Companyspage = (()=>{
            <Sabtiinfocard></Sabtiinfocard>
 
         <h1 className='sabti-h1'>اشخاص</h1>
+        <Sabtiashkhas></Sabtiashkhas>
         </div>
     )
 })

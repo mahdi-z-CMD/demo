@@ -1,7 +1,4 @@
 import { Link, useMatch , useResolvedPath } from "react-router-dom"
-import leftArrow from '../svgs/left-arrow.svg'
-import search from '../svgs/search.svg'
-import space from '../svgs/space-rocket.svg'
 export default function Navbar(){
     
     return(
@@ -13,8 +10,8 @@ export default function Navbar(){
                 <Customurl to="/demo/khadamat" >خدمات</Customurl>
             </ul>
             <ul className="login-area">
-               <img src={leftArrow} alt="left-arrow" className="icon-nav"/> <Customurl to="/demo/more" className="login-btn">ورود</Customurl>
-                <img src={space} alt="space-rocket" className="icon-nav"/><Customurl to="/demo/login" className="tarefe-btn">تعرفه اشتراک ها</Customurl>
+                <Customurl to="/demo/more" className="login-btn"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/long-arrow-left.png" alt="long-arrow-left" className="icon-nav"/>ورود</Customurl>
+                <Customurl to="/demo/login" className="tarefe-btn"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/rocket.png" alt="rocket" className="icon-nav"/>تعرفه اشتراک ها</Customurl>
             </ul>
         </nav>
     )

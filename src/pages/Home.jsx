@@ -40,7 +40,7 @@ export default function Login() {
             </div>
         </div>
         <div className="searchbox">
-                <img src={search} alt="Search icon" className="search-icon"/>
+                <img width="47" height="47" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" className="search-icon"/>
                 <input type="text" placeholder="جست و جو برای شرکت ها و اشخاص " className="search-btn-home" onChange={e => setQuery(e.target.value)}/>
                 <select id="country" name="Country">
                     <option value="none">کشور را انتخاب کنید</option>
@@ -178,11 +178,21 @@ function Filterarea(){
             <h3>حذف همه</h3>
             </div>
             <div className="options">
-                <h3>اطلاعات ثبتی و تماس<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
-                <h3>اطلاعات مالی<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
-                <h3>هعیت مدیره و کارکنان<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
-                <h3>مجوز و صنعت<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
-                <h3>اطلاعات جغرافیایی<img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/></h3>
+                <div className="filterrow">
+                <h3>اطلاعات ثبتی و تماس</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
+                </div>
+                <div className="filterrow">
+                <h3>اطلاعات مالی</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
+                </div>
+                <div className="filterrow">
+                <h3>هعیت مدیره و کارکنان</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
+                </div>
+                <div className="filterrow">
+                <h3>مجوز و صنعت</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
+                </div>
+                <div className="filterrow">
+                <h3>اطلاعات جغرافیایی</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>   
+                </div>
             </div>
         </div>
     )
