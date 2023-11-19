@@ -175,13 +175,13 @@ body{
 }
 .container-texts h2{
   font-size: 2rem;
-  width: 40%;
+  width: 100%;
   position: relative;
   top: 1vh;
 }
 .p1{
   color: rgba(4, 54, 70, 1);
-  width: 35%;
+  width: 45%;
   font-size: 1.2rem;
   text-align: center;
   line-height: 1.8rem;
@@ -255,7 +255,6 @@ body{
   margin-bottom: 2%;
   padding-bottom: 2%;
   cursor: pointer;
-  width: 1000px;
   border-bottom: 1px solid black;
 }
 
@@ -271,7 +270,7 @@ body{
   justify-content: flex-start;
   align-items: center;
   margin-top: 1%;
-  width: 1000px;
+  width: 100%;
   font-weight: bold;
 }
 .result-header-row span{
@@ -313,6 +312,7 @@ body{
   right: -3%;
 }
 .Links{
+  width: 100%;
   color: black;
   text-decoration: none;
 }
@@ -472,7 +472,158 @@ body{
   direction: rtl;
   padding: 12px;
   border-radius: 3px;
+  cursor: pointer;
 }
+.filterbox{
+  margin-top: 2%;
+  direction: rtl;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 6.6%;
+  margin-left: 14%;
+  border-radius: 10px;
+  background-color: white;
+}
+.filterbox-hidden{
+  display: none;
+}
+.select-filter{
+  display: flex;
+  direction: rtl;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+}
+.select-filter h1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.filter2detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.filter2detail-hidden{
+  display: none;
+}
+.filter3detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.filter3detail-hidden{
+  display: none;
+}
+.filter4detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.filter4detail-hidden{
+  display: none;
+}
+.filter5detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.filter5detail-hidden{
+  display: none;
+}
+/* first line */
+.filter1detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1rem;
+  cursor: pointer;
+  animation: blurAndFadeOut 0.5s forwards;
+}
+.filter1detail-hidden{
+  display: none;
+  
+}
+@keyframes blurAndFadeOut {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: blurAndFadeOut 2s forwards;
+}
+.filter1row{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.filter1row span{
+  width: 15%;
+}
+.filter1row select{
+  width: 20%;
+}
+#filter-type{
+  margin-right: 5%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5%;
+}
+/* first line end */
 @media only screen and (max-width: 750px) {
   
 }
