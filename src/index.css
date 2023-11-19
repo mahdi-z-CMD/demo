@@ -19,7 +19,7 @@ body{
   background-color: white;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 0 2rem;
@@ -45,6 +45,11 @@ body{
   display: flex;
   width: 45%;
   gap: 0.5rem;
+}
+.login-area-icon{
+  display: none;
+  width: 50px;
+  height: 50px;
 }
 .khadamat-area{
   padding: 0;
@@ -131,6 +136,23 @@ body{
   }
 }
 /* navbar responsive tablet end */
+/* navbar responsive mobile  */
+@media only screen and (max-width: 435px) {
+  .login-area{
+    display: none;
+  }
+  .login-area-show{
+    display: flex;
+    flex-direction: column;
+  }
+  .login-area-icon{
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+/* navbar responvie mobile end */
 /* navbar end */
 
 /* container css details  */
@@ -171,8 +193,9 @@ body{
 }
 .searchbox{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-right: 6.6%;
 }
 .search-icon{
   background-color: rgba(34, 194, 231, 1);
@@ -188,14 +211,13 @@ body{
   background-color: rgba(217, 217, 217, 1);
   direction: rtl;
   padding: 13px;
-  width: 40%;
+  width: 70%;
   margin-left: 5%;
 }
 .search-btn-home:focus{
   outline: none;
 }
 #country{
-  margin-right: 1%;
   margin-left: 1%;
   border-radius: 3px;
   border: none;
@@ -205,9 +227,13 @@ body{
 }
 .cat{
   display: flex;
-  justify-content: center;
-  margin-left: 21%;
-  margin-top: 1%;
+  justify-content: flex-end;
+  margin-right: 6.6%;
+  margin-left: 41%;
+  margin-top: 2%;
+}
+.cat-1{
+  margin-left: 3%;
 }
 .rb1{
   margin-left: 2%;
@@ -223,47 +249,87 @@ body{
 .Cards{
   display: flex;
   direction: rtl;
-  margin-top: 1%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
   cursor: pointer;
-  width: 660px;
-  border: 1px solid rgba(128, 128, 128, 0.4);
-  box-shadow: 2px 5px 4px #888888;
-  padding: 3%;
-  border-radius: 5px;
+  width: 1000px;
+  border-bottom: 1px solid black;
 }
+
 .spans{
-  width: 40%;
-  max-width: 40%;
-  margin-right: 1%;
-  margin-left: 0.5%;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 3%;
+  width: 40%;
 }
-.spans:not(:last-child){
-  border-left: 1px solid rgba(0, 0, 0,0.2);
+.result-header-row{
+  display: flex;
+  direction: rtl;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1%;
+  width: 1000px;
+  font-weight: bold;
+}
+.result-header-row span{
+  margin-right: 3%;
+  width: 40%;
 }
 .search-result{
-  margin-top: 1%;
+  margin-top: 2%;
   direction: rtl;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 70%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
 }
 .search-result li{
   cursor: pointer;
   margin-top: 5%;
 }
+.result-header{
+  margin-top: 2%;
+  margin-bottom: 3%;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
 
+.header-onvan{
+  margin-left: 10%;
+  width: 50%;
+  position: relative;
+  right: -3%;
+}
 .Links{
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+}
+.avali-span{
+  margin-left: 10%;
+  width: 35%;
 }
 .result-section{
-  width: 100%;
+  margin-top: 2%;
+  direction: rtl;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 6.6%;
+  margin-left: 14%;
+  border-radius: 10px;
+  background-color: white;
 }
 .more-btn{
   display: flex;
@@ -347,54 +413,68 @@ body{
 }
 
 /* container responsive tablet end */
+/* container responsive mobile  */
+@media only screen and (max-width: 435px) {
+  .container-texts h2{
+    font-size: 1.4rem;
+    width: 100%;
+    position: relative;
+    top: 1vh;
+  }
+  .p1{
+    color: rgba(4, 54, 70, 1);
+    width: 90%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .p2{
+    font-size: 0.8rem;
+  }
+  .searchbox{
+    margin-top: 15%;
+  }
+  .search-btn-home{
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+    direction: rtl;
+    padding: 13px;
+    width: 55%;
+    margin-left: 5%;
+  }
+  #country{
+    width: 20%;
+    margin-left: 1%;
+    font-size: 0.6rem;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+    direction: rtl;
+    padding: 13px;
+  }
+  .cat{
+    display: flex;
+    justify-content: center;
+    margin-left: -1%;
+    margin-top: 1%;
+  }
+}
+/* container mobile end */
 /* container end */
 
 
 /* Filter page  */
 
-.Filters{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.Filters-open-btn{
+  background-color: rgba(34, 194, 231, 1);
+  text-decoration: none;
+  color: white;
   direction: rtl;
-  width: 15%;
-  margin-right: 4%;
-  height: 50vh;
-  border-left: 1px solid black;
-}
-.filterrow{
-  display: flex;
-  direction: rtl;
-  justify-content: flex-start;
-}
-.filterrow img{
-  margin-right: auto;
-}
-.header-fiter{
-  display: flex;
-  justify-content: center;
-  direction: rtl;
+  padding: 12px;
+  border-radius: 3px;
 }
 @media only screen and (max-width: 750px) {
-  .Filters{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    direction: rtl;
-    width: 30%;
-    margin-right: 4%;
-    height: 50vh;
-    border-left: 1px solid black;
-  }
-    .header-fiter h1{
-      font-size: 1.2rem;
-    }
-    .header-fiter h3{
-      font-size: 0.7rem;
-    }
-    .filterrow h3{
-      font-size: 0.9rem;
-    }
+  
 }
 /* Filter page end */
 /* company page */

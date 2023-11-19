@@ -10,9 +10,11 @@ export default function Login() {
     const [query, setQuery] = useState("")
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
+    const [amelcheck, setAmelcheck] = useState(null)
     const [selected, setSelected] = useState(2);
     const [adad, setAdad] = useState(0)
     let ihastam = 0
+    let modiamel = "no data"
     const onChange1 = () => {
         setInputValue1(inputValue1)
         setSelected(1)
@@ -51,9 +53,13 @@ export default function Login() {
             <div className="cat">
             <input type="radio" value="ashkhas" name="cat" className="rb2" checked={selected === 1} onChange={onChange1}/> اشخاص
             <input type="radio" value="sherkatha" name="cat" className="rb1" checked={selected === 2} onChange={onChange2}/> شرکت ها
+                <div className="cat-1">
+                    <a href="#" className="Filters-open-btn">جست و جوی پیشرفته</a>
+                </div>
             </div>
         <div className="result-section">
             <ul className='search-result'>
+                <HeaderCategory h1={selected === 2 ? "عنوان شرکت" : "عنوان شخص"} h2={selected === 2 ? "نوع شرکت" : "شناسه "} h3={selected === 2 ? "وضعیت شرکت" : "کد ملی"} h4={selected === 2 ? "مدیر عامل" : null}></HeaderCategory>
         {
             selected === 2
             ?
@@ -65,37 +71,46 @@ export default function Login() {
                     if (adad === 0) {
                         if (ihastam === 3) {
                         }else{
+                            try {
+                                modiamel = key.summary.companySummary.peopleSummary.ceo.title
+                             } catch (error) {
+                                modiamel = "نامشخص"
+                             }
                             ihastam = ihastam + 1
                             return(
-                                <li>
                                 <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
-                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
+                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.summary.registrationTypeTitle} status={key.summary.companySummary.summary.status} ceo={modiamel}></Cardcompany>
                                 </Link>
-                                </li>
                             )
                         }
                     }else if(adad === 1){
                         if (ihastam === 6) {
                         }else{
+                            try {
+                                modiamel = key.summary.companySummary.peopleSummary.ceo.title
+                             } catch (error) {
+                                 modiamel = "نامشخص"
+                             }
                             ihastam = ihastam + 1
                             return(
-                                <li>
                                 <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
-                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
+                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.summary.registrationTypeTitle} status={key.summary.companySummary.summary.status} ceo={modiamel}></Cardcompany>
                                 </Link>
-                                </li>
                             )
                         }
                     }else if(adad === 2){
                         if (ihastam === 9) {
                         }else{
                             ihastam = ihastam + 1
+                            try {
+                               modiamel = key.summary.companySummary.peopleSummary.ceo.title
+                            } catch (error) {
+                                modiamel = "نامشخص"
+                            }
                             return(
-                                <li>
                                 <Link to={`/demo/company/${key.summary.companySummary.id}`} className='Links'>
-                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.id} status={key.summary.companySummary.summary.status}></Cardcompany>
+                                    <Cardcompany name={key.summary.companySummary.title} id={key.summary.companySummary.summary.registrationTypeTitle} status={key.summary.companySummary.summary.status} ceo={modiamel}></Cardcompany>
                                 </Link>
-                                </li>
                             )
                         }
                     }
@@ -147,7 +162,6 @@ export default function Login() {
         }
         <img src={adad < 2 ? arrowdown : arrowup} alt="down" className="more-btn" onClick={changelist}/>
         </ul>
-        <Filterarea></Filterarea>
         </div>
         </>
     )
@@ -155,44 +169,36 @@ export default function Login() {
 function Cardcompany(props){
     return(
         <div className='Cards'>
-        <span className="spans">نام کمپانی  : {props.name}</span>
-        <span className="spans">شناسه  : {props.id}</span>
-        <span className="spans">وضعیت  : {props.status}</span>
+            <img width="28" height="28" src="https://img.icons8.com/plumpy/24/company.png" alt="company" className="icon-company-row"/>
+            <span className="spans avali-span">{props.name}</span>
+            <span className="spans">{props.id}</span>
+            <span className="spans">{props.status}</span>
+            <span className="spans">{props.ceo}</span>
         </div>
     )
 }
 function Cardperson(props){
     return(
         <div className='Cards'>
-        <span className="spans">نام  : {props.name}</span>
-        <span className="spans">شناسه  : {props.id}</span>
-        <span className="spans">کد ملی  : {props.status}</span>
+            <span className="spans avali-span">نام  : {props.name}</span>
+            <span className="spans">شناسه  : {props.id}</span>
+            <span className="spans">کد ملی  : {props.status}</span>
         </div>
     )
 }
-function Filterarea(){
+function HeaderCategory(props){
     return(
-        <div className="Filters">
-            <div className="header-fiter">
-            <h1>فیلترها</h1>
-            <h3>حذف همه</h3>
-            </div>
-            <div className="options">
-                <div className="filterrow">
-                <h3>اطلاعات ثبتی و تماس</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
-                </div>
-                <div className="filterrow">
-                <h3>اطلاعات مالی</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
-                </div>
-                <div className="filterrow">
-                <h3>هعیت مدیره و کارکنان</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
-                </div>
-                <div className="filterrow">
-                <h3>مجوز و صنعت</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>
-                </div>
-                <div className="filterrow">
-                <h3>اطلاعات جغرافیایی</h3><img width="20" height="20" src="https://img.icons8.com/ios/50/expand-arrow.png" alt="expand-arrow" className="filter-icon"/>   
-                </div>
+        <div className="result-header">
+            <div className="result-header-row">
+            <span className="header-onvan">{props.h1}</span>
+            <span>{props.h2}</span>
+            <span>{props.h3}</span>
+            {
+                props.h4 === null 
+                ? null
+                : <span>{props.h4}</span>
+            }
+            
             </div>
         </div>
     )
