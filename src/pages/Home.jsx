@@ -17,6 +17,8 @@ const Home = (()=>{
     const [companymadar, setCompanymadar] = useState('انتخاب کنید')
     const [companychild, setCompanychild] = useState('انتخاب کنید')
     const [companyeghtesadcode, setCompanyeghtesadcode] = useState('انتخاب کنید')
+    const [companyphone, setCompanyphone] = useState('انتخاب کنید')
+    const [companyemail, setCompanyemail] = useState('انتخاب کنید')
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
     const [filterbox, setFilterbox] = useState('default');
@@ -148,6 +150,22 @@ const Home = (()=>{
                         <div className="filter1row">
                             <span>کد اقتصادی</span>
                             <select id="filter-type" name="typecompany" value={companyeghtesadcode} onChange={(e)=> setCompanyeghtesadcode(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value="دارد">دارد</option>
+                                <option value="ندارد">ندارد</option>
+                            </select>
+                        </div>
+                        <div className="filter1row">
+                            <span>تلفن</span>
+                            <select id="filter-type" name="typecompany" value={companyphone} onChange={(e)=> setCompanyphone(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value="دارد">دارد</option>
+                                <option value="ندارد">ندارد</option>
+                            </select>
+                        </div>
+                        <div className="filter1row">
+                            <span>ایمیل</span>
+                            <select id="filter-type" name="typecompany" value={companyemail} onChange={(e)=> setCompanyemail(e.target.value)}>
                                 <option value="انتخاب کنید">انتخاب کنید</option>
                                 <option value="دارد">دارد</option>
                                 <option value="ندارد">ندارد</option>
@@ -329,6 +347,32 @@ const Home = (()=>{
                             : null) 
                     }else{
                         return(item.summary.companySummary.summary.taxNumber === null
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by company phone -------------------
+                    if (companyphone === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else if(companyphone === 'دارد'){
+                        return(item.summary.companySummary.communications.tel !== null
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }else{
+                        return(item.summary.companySummary.communications.tel === null
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by company email -------------------
+                    if (companyemail === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else if(companyemail === 'دارد'){
+                        return(item.summary.companySummary.communications.email !== null
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }else{
+                        return(item.summary.companySummary.communications.email === null
                             ? item.summary.companySummary.title.toLowerCase().includes(query)
                             : null) 
                     }

@@ -78,9 +78,7 @@ const Companyspage = (()=>{
         <Sabtiashkhas></Sabtiashkhas>
         <h1>
             {
-                datas.companys[companyid].summary.companySummary.summary.taxNumber !== null
-                ? datas.companys[companyid].summary.companySummary.summary.taxNumber
-                : "nothing"
+                datas.companys[companyid].summary.companySummary.communications.tel
             }
         </h1>
         <h1>balast</h1>
