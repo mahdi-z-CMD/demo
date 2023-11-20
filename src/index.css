@@ -1,6 +1,6 @@
 @font-face {
   font-family: "dana";
-  src: url(./dana-medium.ttf);
+  src: url(./dana-light.ttf);
 }
 :root {
   --login-btn: #26bfe9;
@@ -673,6 +673,7 @@ body{
 .delete-cat .delete-hide{
   display: none;
 }
+
 .delete-icon{
   margin-left: 10px;
 }
