@@ -45,7 +45,7 @@ const Companyspage = (()=>{
             <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/plumpy/24/news.png" alt="calendar--v1" className='sabti-icon'/>آخرین آگهی روزنامه رسمی: {shamsidateLastnews}</span>
             <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/mailbox-with-letter.png" alt="calendar--v1" className='sabti-icon'/>کد پستی: {datas.companys[companyid].summary.companySummary.communications.postalCode}</span>
             <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/id-verified.png" alt="calendar--v1" className='sabti-icon'/>شناسه ملی: {datas.companys[companyid].summary.companySummary.id}</span>
-            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/money-bag-euro.png" alt="money-bag-euro" className='sabti-icon'/>شناسه ملی: {datas.companys[companyid].summary.companySummary.id}</span>
+            <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/money-bag-euro.png" alt="money-bag-euro" className='sabti-icon'/>کد اقتصادی: {datas.companys[companyid].summary.companySummary.summary.taxNumber}</span>
             <span className='sabti-text'><img width="20" height="20" src="https://img.icons8.com/material-two-tone/24/address--v1.png" alt="money-bag-euro" className='sabti-icon'/>شناسه ملی: {datas.companys[companyid].summary.companySummary.communications.address}</span>
             </div>
         </div>
@@ -76,6 +76,14 @@ const Companyspage = (()=>{
 
         <h1 className='sabti-h1'>اشخاص</h1>
         <Sabtiashkhas></Sabtiashkhas>
+        <h1>
+            {
+                datas.companys[companyid].summary.companySummary.summary.taxNumber !== null
+                ? datas.companys[companyid].summary.companySummary.summary.taxNumber
+                : "nothing"
+            }
+        </h1>
+        <h1>balast</h1>
         </div>
     )
 })

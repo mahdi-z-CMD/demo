@@ -12,7 +12,11 @@ const Home = (()=>{
     const [filterh4, setFilterh4] = useState(false);
     const [filterh5, setFilterh5] = useState(false);
     const [query, setQuery] = useState("")
-    const [faal, setfaal] = useState(true)
+    const [faal, setfaal] = useState('انتخاب کنید')
+    const [companytype, setCompanytype] = useState('انتخاب کنید')
+    const [companymadar, setCompanymadar] = useState('انتخاب کنید')
+    const [companychild, setCompanychild] = useState('انتخاب کنید')
+    const [companyeghtesadcode, setCompanyeghtesadcode] = useState('انتخاب کنید')
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
     const [filterbox, setFilterbox] = useState('default');
@@ -66,19 +70,19 @@ const Home = (()=>{
                     <div className={filterh1 === false ? "filter1detail-hidden" : "filter1detail"}>
                         <div className="filter1row">
                         <span>نوع شرکت</span>
-                        <select id="filter-type" name="typecompany">
-                            <option value="none">انتخاب کنید</option>
-                            <option value="iran">سهامی خاص</option>
-                            <option value="uae">شرکت بامسیولیت محدود</option>
-                            <option value="uae">تعاونی</option>
-                            <option value="uae">بامسئولیت محدود</option>
-                            <option value="uae">موسسه</option>
-                            <option value="uae">نامشخص</option>
-                            <option value="uae">تضامنی</option>
-                            <option value="uae">شعبه شرکت خارجی</option>
-                            <option value="uae">نسبی</option>
-                            <option value="uae">سهامی عام</option>
-                            <option value="uae">مختلط سهامی</option>
+                        <select id="filter-type" name="typecompany" value={companytype} onChange={(e)=> setCompanytype(e.target.value)}>
+                            <option value="انتخاب کنید">انتخاب کنید</option>
+                            <option value="سهامی خاص">سهامی خاص</option>
+                            <option value="شرکت بامسیولیت محدود">شرکت بامسیولیت محدود</option>
+                            <option value="تعاونی">تعاونی</option>
+                            <option value="بامسئولیت محدود">بامسئولیت محدود</option>
+                            <option value="موسسه">موسسه</option>
+                            <option value="نامشخص">نامشخص</option>
+                            <option value="تضامنی">تضامنی</option>
+                            <option value="شعبه شرکت خارجی">شعبه شرکت خارجی</option>
+                            <option value="نسبی">نسبی</option>
+                            <option value="سهامی عام">سهامی عام</option>
+                            <option value="مختلط سهامی">مختلط سهامی</option>
                         </select>
                         </div>
                         <div className="filter1row">
@@ -108,22 +112,46 @@ const Home = (()=>{
                         <select id="filter-type" name="typecompany" value={faal} onChange={(e)=> setfaal(e.target.value)}>
                             <option value="انتخاب کنید">انتخاب کنید</option>
                             <option value="فعال">فعال</option>
-                            <option value="uae">غیر فعال مالیاتی</option>
-                            <option value="uae"> در حال تصفیه</option>
-                            <option value="uae">منحل شده</option>
+                            <option value="غیر فعال مالیاتی">غیر فعال مالیاتی</option>
+                            <option value="در حال تصفیه"> در حال تصفیه</option>
+                            <option value="منحل شده">منحل شده</option>
                             <option value="غیر فعال">غیر فعال</option>
-                            <option value="uae">شناسه ملی نامعتبر</option>
-                            <option value="uae">تعلیق شده</option>
-                            <option value="uae">ختم تصفیه شده</option>
-                            <option value="uae">ورشکسته شده</option>
-                            <option value="uae">ادغام شده</option>
-                            <option value="uae">غیرفعال مالیاتی</option>
-                            <option value="uae">شناسه ملی لغو اعتبار شده</option>
-                            <option value="uae">بررسی سیستمی</option>
-                            <option value="uae">تعليق شده</option>
-                            <option value="uae">ابطال شده</option>
-                            <option value="uae">درحال تصفیه </option>
+                            <option value="شناسه ملی نامعتبر">شناسه ملی نامعتبر</option>
+                            <option value="تعلیق شده">تعلیق شده</option>
+                            <option value="ختم تصفیه شده">ختم تصفیه شده</option>
+                            <option value="ورشکسته شده">ورشکسته شده</option>
+                            <option value="ادغام شده">ادغام شده</option>
+                            <option value="غیرفعال مالیاتی">غیرفعال مالیاتی</option>
+                            <option value="شناسه ملی لغو اعتبار شده">شناسه ملی لغو اعتبار شده</option>
+                            <option value="بررسی سیستمی">بررسی سیستمی</option>
+                            <option value="تعليق شده">تعليق شده</option>
+                            <option value="ابطال شده">ابطال شده</option>
+                            <option value="درحال تصفیه">درحال تصفیه </option>
                         </select>
+                        </div>
+                        <div className="filter1row">
+                            <span>شرکت مادر</span>
+                            <select id="filter-type" name="typecompany" value={companymadar} onChange={(e)=> setCompanymadar(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value="دارد">دارد</option>
+                                <option value="ندارد">ندارد</option>
+                            </select>
+                        </div>
+                        <div className="filter1row">
+                            <span>زیر مجموعه</span>
+                            <select id="filter-type" name="typecompany" value={companychild} onChange={(e)=> setCompanychild(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value="دارد">دارد</option>
+                                <option value="ندارد">ندارد</option>
+                            </select>
+                        </div>
+                        <div className="filter1row">
+                            <span>کد اقتصادی</span>
+                            <select id="filter-type" name="typecompany" value={companyeghtesadcode} onChange={(e)=> setCompanyeghtesadcode(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value="دارد">دارد</option>
+                                <option value="ندارد">ندارد</option>
+                            </select>
                         </div>
                     </div>
                     <h1 onClick={boropaein2}>مجوز و صنعت<img width="25" height="25" src={filterh2 === false ? arrowdown : arrowup} alt="drop-icon" /></h1>
@@ -207,9 +235,6 @@ const Home = (()=>{
     useEffect(() => {
         filterboxShow();
       }, []);
-      useEffect(() => {
-        
-      }, [faal]);
     // filter functions --------------------------
     // filter functions end -------------------
     return(
@@ -251,11 +276,59 @@ const Home = (()=>{
                     ? null
                     : item.summary.companySummary.title.toLowerCase().includes(query)
                 }).filter((item)=>{
+                    // filter by type company -------------------
+                    if (companytype === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else{      
+                        return(item.summary.companySummary.summary.registrationTypeTitle === companytype
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
                     // filter by vaziat -------------------
                     if (faal === 'انتخاب کنید') {
                         return item.summary.companySummary.title.toLowerCase().includes(query)
                     }else{      
                         return(item.summary.companySummary.summary.status === faal
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by madar -------------------
+                    if (companymadar === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else if(companymadar === 'دارد'){
+                        return(item.companyPeople.parentCompanies.length !== 0
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }else{
+                        return(item.companyPeople.parentCompanies.length === 0
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by child -------------------
+                    if (companychild === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else if(companychild === 'دارد'){
+                        return(item.companyPeople.childCompanies.length !== 0
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }else{
+                        return(item.companyPeople.childCompanies.length === 0
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by eghtesad code -------------------
+                    if (companyeghtesadcode === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else if(companyeghtesadcode === 'دارد'){
+                        return(item.summary.companySummary.summary.taxNumber !== null
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }else{
+                        return(item.summary.companySummary.summary.taxNumber === null
                             ? item.summary.companySummary.title.toLowerCase().includes(query)
                             : null) 
                     }
