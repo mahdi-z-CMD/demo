@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from 'react-router-dom'
 import data from './companytest.json'
 import dataperson from './persontest.json'
@@ -12,10 +12,10 @@ const Home = (()=>{
     const [filterh4, setFilterh4] = useState(false);
     const [filterh5, setFilterh5] = useState(false);
     const [query, setQuery] = useState("")
+    const [faal, setfaal] = useState(true)
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
-    const [filterbox, setFilterbox] = useState(false);
-    const [amelcheck, setAmelcheck] = useState(null)
+    const [filterbox, setFilterbox] = useState('default');
     const [selected, setSelected] = useState(2);
     const [adad, setAdad] = useState(0)
     let ihastam = 0
@@ -105,13 +105,13 @@ const Home = (()=>{
                         </div>
                         <div className="filter1row">
                         <span>وضعیت</span>
-                        <select id="filter-type" name="typecompany">
-                            <option value="none">انتخاب کنید</option>
-                            <option value="iran">فعال</option>
+                        <select id="filter-type" name="typecompany" value={faal} onChange={(e)=> setfaal(e.target.value)}>
+                            <option value="انتخاب کنید">انتخاب کنید</option>
+                            <option value="فعال">فعال</option>
                             <option value="uae">غیر فعال مالیاتی</option>
                             <option value="uae"> در حال تصفیه</option>
                             <option value="uae">منحل شده</option>
-                            <option value="uae">غیر فعال</option>
+                            <option value="غیر فعال">غیر فعال</option>
                             <option value="uae">شناسه ملی نامعتبر</option>
                             <option value="uae">تعلیق شده</option>
                             <option value="uae">ختم تصفیه شده</option>
@@ -204,6 +204,14 @@ const Home = (()=>{
             setFilterbox(false)
         }
     }
+    useEffect(() => {
+        filterboxShow();
+      }, []);
+      useEffect(() => {
+        
+      }, [faal]);
+    // filter functions --------------------------
+    // filter functions end -------------------
     return(
         <>
         <div className="container">
@@ -238,9 +246,19 @@ const Home = (()=>{
             selected === 2
             ?
                 data.filter((item)=>{
+                    // filter by search ------------------
                     return query.toLowerCase() === ''
                     ? null
                     : item.summary.companySummary.title.toLowerCase().includes(query)
+                }).filter((item)=>{
+                    // filter by vaziat -------------------
+                    if (faal === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else{      
+                        return(item.summary.companySummary.summary.status === faal
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
                 }).map((key)=>{
                     if (adad === 0) {
                         if (ihastam === 3) {
@@ -299,11 +317,9 @@ const Home = (()=>{
                     }else{
                         ihastam = ihastam + 1
                         return(
-                            <li>
                             <Link to={`/demo/person/${key.person.id}`} className='Links'>
                                 <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
                             </Link>
-                            </li>
                         )
                     }
                 }else if(adad === 1){
@@ -311,11 +327,9 @@ const Home = (()=>{
                     }else{
                         ihastam = ihastam + 1
                         return(
-                            <li>
                             <Link to={`/demo/person/${key.person.id}`} className='Links'>
                                 <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
                             </Link>
-                            </li>
                         )
                     }
                 }else if(adad === 2){
@@ -323,18 +337,16 @@ const Home = (()=>{
                     }else{
                         ihastam = ihastam + 1
                         return(
-                            <li>
                             <Link to={`/demo/person/${key.person.id}`} className='Links'>
                                 <Cardperson name={key.person.title} id={key.person.id} status={key.person.biography.nationalId}></Cardperson>
                             </Link>
-                            </li>
                         )
                     }
                 }
                 
             })
         }
-        <img src={adad < 2 ? arrowdown : arrowup} alt="down" className="more-btn" onClick={changelist}/>
+        <img src={adad < 2 ? arrowdown : arrowup} alt="down" className={ihastam === 0 ? "more-btn-hide" : "more-btn"} onClick={changelist}/>
         </ul>
         </div>
         </>

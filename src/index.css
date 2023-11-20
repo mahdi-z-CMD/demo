@@ -331,6 +331,7 @@ body{
   border-radius: 10px;
   background-color: white;
 }
+
 .more-btn{
   display: flex;
   margin-right: auto;
@@ -342,7 +343,9 @@ body{
   width: 40px;
   height: 40px;
 }
-
+.more-btn-hide{
+  display: none;
+}
 /* container responsive tablet */
 @media only screen and (max-width: 750px) {
   .container-texts{
@@ -521,6 +524,7 @@ body{
   padding: 1%;
   font-size: 1.3rem;
   cursor: pointer;
+  animation: blurAndFadeOut 0.5s forwards;
 }
 .filter2detail-hidden{
   display: none;
@@ -535,6 +539,7 @@ body{
   padding: 1%;
   font-size: 1.3rem;
   cursor: pointer;
+  animation: blurAndFadeOut 0.5s forwards;
 }
 .filter3detail-hidden{
   display: none;
@@ -549,6 +554,7 @@ body{
   padding: 1%;
   font-size: 1.3rem;
   cursor: pointer;
+  animation: blurAndFadeOut 0.5s forwards;
 }
 .filter4detail-hidden{
   display: none;
@@ -563,6 +569,7 @@ body{
   padding: 1%;
   font-size: 1.3rem;
   cursor: pointer;
+  animation: blurAndFadeOut 0.5s forwards;
 }
 .filter5detail-hidden{
   display: none;
