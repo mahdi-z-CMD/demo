@@ -282,6 +282,9 @@ const Home = (()=>{
                 </div>
             </div>
         <Filterarea></Filterarea>
+        <div className="delete-cat">
+            <h3 className={companytype === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanytype('انتخاب کنید')}>نوع شرکت <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/delete-sign.png" alt="delete-sign" className="delete-icon"/></h3>
+        </div>
         <div className="result-section">
             <ul className='search-result'>
                 <HeaderCategory h1={selected === 2 ? "عنوان شرکت" : "عنوان شخص"} h2={selected === 2 ? "نوع شرکت" : "شناسه "} h3={selected === 2 ? "وضعیت شرکت" : "کد ملی"} h4={selected === 2 ? "مدیر عامل" : null}></HeaderCategory>

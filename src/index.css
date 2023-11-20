@@ -630,6 +630,32 @@ body{
   border-radius: 5px;
   padding: 0.5%;
 }
+.delete-cat{
+  display: flex;
+  direction: rtl;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 6.6%;
+  padding-top: 1%;
+}
+.delete-cat h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 1);
+  padding: 0.5%;
+  margin-left: 1%;
+  border-radius: 15px;
+  animation: blurAndFadeOut 0.5s forwards;
+  cursor: pointer;
+}
+.delete-cat .delete-hide{
+  display: none;
+}
+.delete-icon{
+  margin-right: 10px;
+}
 /* first line end */
 @media only screen and (max-width: 750px) {
   
