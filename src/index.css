@@ -633,28 +633,48 @@ body{
 .delete-cat{
   display: flex;
   direction: rtl;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
+  background-color: white;
   align-items: flex-start;
   margin-right: 6.6%;
-  padding-top: 1%;
+  margin-left: 14%;
+  border-radius: 10px;
+  margin-top: 2%;
 }
-.delete-cat h3{
+.delete-cat-hide{
+  display: none;
+}
+
+.delete-cat h2{
+  margin-right: 2%;
+}
+.delete-items{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.delete-items h3{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(217, 217, 217, 1);
   padding: 0.5%;
   margin-left: 1%;
+  margin-right: 1.5%;
   border-radius: 15px;
+  flex-basis: 16%;
   animation: blurAndFadeOut 0.5s forwards;
   cursor: pointer;
+  color: rgba(255, 56, 56, 1);
 }
 .delete-cat .delete-hide{
   display: none;
 }
 .delete-icon{
-  margin-right: 10px;
+  margin-left: 10px;
 }
 /* first line end */
 @media only screen and (max-width: 750px) {

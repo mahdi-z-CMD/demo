@@ -19,6 +19,8 @@ const Home = (()=>{
     const [companyeghtesadcode, setCompanyeghtesadcode] = useState('انتخاب کنید')
     const [companyphone, setCompanyphone] = useState('انتخاب کنید')
     const [companyemail, setCompanyemail] = useState('انتخاب کنید')
+    const [companytasis, setCompanytasis] = useState('انتخاب تاریخ')
+    const [companyagahi, setCompanyagahi] = useState('انتخاب تاریخ')
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
     const [filterbox, setFilterbox] = useState('default');
@@ -89,7 +91,7 @@ const Home = (()=>{
                         </div>
                         <div className="filter1row">
                         <span>تاریخ تاسیس</span>
-                        <select id="filter-type" name="typecompany">
+                        <select id="filter-type" name="typecompany" value={companytasis} onChange={(e)=> setCompanytasis(e.target.value)}>
                             <option value="none">انتخاب تاریخ</option>
                             <option value="iran">یک ماه اخیر</option>
                             <option value="uae">سه ماه اخیر</option>
@@ -100,8 +102,8 @@ const Home = (()=>{
                         </div>
                         <div className="filter1row">
                         <span>تاریخ آخرین آگهی</span>
-                        <select id="filter-type" name="typecompany">
-                            <option value="none">انتخاب کنید</option>
+                        <select id="filter-type" name="typecompany" value={companyagahi} onChange={(e)=> setCompanyagahi(e.target.value)}>
+                            <option value="none">انتخاب تاریخ</option>
                             <option value="iran">یک ماه اخیر</option>
                             <option value="uae">سه ماه اخیر</option>
                             <option value="uae"> شش ماه اخیر</option>
@@ -282,8 +284,19 @@ const Home = (()=>{
                 </div>
             </div>
         <Filterarea></Filterarea>
-        <div className="delete-cat">
-            <h3 className={companytype === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanytype('انتخاب کنید')}>نوع شرکت <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/delete-sign.png" alt="delete-sign" className="delete-icon"/></h3>
+        <div className={filterbox === false ? "delete-cat-hide" : "delete-cat"}>
+            <h2>فیلتر های اعمال شده :</h2>
+            <div className="delete-items">
+            <h3 className={companytype === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanytype('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>نوع شرکت</h3>
+            <h3 className={companytasis === 'انتخاب تاریخ' ? "delete-hide" : ""} onClick={()=>setCompanytasis('انتخاب تاریخ')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>تاریخ تاسیس</h3>
+            <h3 className={companyagahi === 'انتخاب تاریخ' ? "delete-hide" : ""} onClick={()=>setCompanyagahi('انتخاب تاریخ')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>تاریخ تاسیس</h3>
+            <h3 className={faal === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setfaal('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>وضعیت</h3>
+            <h3 className={companymadar === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanymadar('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>شرکت مادر</h3>
+            <h3 className={companychild === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanychild('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>زیر مجموعه</h3>
+            <h3 className={companyeghtesadcode === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanyeghtesadcode('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>کد اقتصادی</h3>
+            <h3 className={companyphone === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanyphone('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>تلفن</h3>
+            <h3 className={companyemail === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanyemail('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>ایمیل</h3>
+            </div>
         </div>
         <div className="result-section">
             <ul className='search-result'>
