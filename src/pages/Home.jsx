@@ -21,6 +21,9 @@ const Home = (()=>{
     const [companyemail, setCompanyemail] = useState('انتخاب کنید')
     const [companytasis, setCompanytasis] = useState('انتخاب تاریخ')
     const [companyagahi, setCompanyagahi] = useState('انتخاب تاریخ')
+    const [companymarkcount, setCompanymarkcount] = useState('انتخاب کنید')
+    const [companytolidmojavez, setCompanytolidmojavez] = useState('انتخاب کنید')
+    const [companytedad, setCompanytedad] = useState('انتخاب کنید')
     const [inputValue1, setInputValue1] = useState('');
     const [inputValue2, setInputValue2] = useState('');
     const [filterbox, setFilterbox] = useState('default');
@@ -176,11 +179,50 @@ const Home = (()=>{
                     </div>
                     <h1 onClick={boropaein2}>مجوز و صنعت<img width="25" height="25" src={filterh2 === false ? arrowdown : arrowup} alt="drop-icon" /></h1>
                     <div className={filterh2 === false ? "filter2detail-hidden" : "filter2detail"}>
-                        <h1>salam</h1>
+                        <div className="filter1row">
+                            <span>تعداد علامت ثبتی</span>
+                            <select id="filter-type" name="typecompany" value={companymarkcount} onChange={(e)=> setCompanymarkcount(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value={10}>10</option>
+                                <option value={20}>20</option>
+                                <option value={30}>30</option>
+                                <option value={40}>40</option>
+                                <option value={50}>50</option>
+                                <option value={60}>60</option>
+                                <option value={70}>70</option>
+                                <option value={80}>80</option>
+                                <option value={90}>90</option>
+                                <option value={100}>100</option>
+                            </select>
+                        </div>
+                        <div className="filter1row">
+                            <span>مجوز تولید</span>
+                            <select id="filter-type" name="typecompany" value={companytolidmojavez} onChange={(e)=> setCompanytolidmojavez(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value="دارد">دارد</option>
+                                <option value="ندارد">ندارد</option>
+                            </select>
+                        </div>
                     </div>
                     <h1 onClick={boropaein3}>هعیت مدیره و کارکنان<img width="25" height="25" src={filterh3 === false ? arrowdown : arrowup} alt="drop-icon" /></h1>
                     <div className={filterh3 === false ? "filter3detail-hidden" : "filter3detail"}>
-                        <h1>salam</h1>
+                    <div className="filter1row">
+                            <span>جمع تعداد کارمندان</span>
+                            <select id="filter-type" name="typecompany" value={companytedad} onChange={(e)=> setCompanytedad(e.target.value)}>
+                                <option value="انتخاب کنید">انتخاب کنید</option>
+                                <option value={10}>10</option>
+                                <option value={20}>20</option>
+                                <option value={50}>50</option>
+                                <option value={80}>80</option>
+                                <option value={100}>100</option>
+                                <option value={150}>150</option>
+                                <option value={200}>200</option>
+                                <option value={300}>300</option>
+                                <option value={400}>400</option>
+                                <option value={500}>500</option>
+                                <option value={1000}>1000</option>
+                            </select>
+                        </div>
                     </div>
                     <h1 onClick={boropaein4}>اطلاعات مالی<img width="25" height="25" src={filterh4 === false ? arrowdown : arrowup} alt="drop-icon" /></h1>
                     <div className={filterh4 === false ? "filter4detail-hidden" : "filter4detail"}>
@@ -296,6 +338,9 @@ const Home = (()=>{
             <h3 className={companyeghtesadcode === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanyeghtesadcode('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>کد اقتصادی</h3>
             <h3 className={companyphone === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanyphone('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>تلفن</h3>
             <h3 className={companyemail === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanyemail('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>ایمیل</h3>
+            <h3 className={companymarkcount === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanymarkcount('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>تعداد علامت ثبتی</h3>
+            <h3 className={companytolidmojavez === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanytolidmojavez('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>مجوز تولید</h3>
+            <h3 className={companytedad === 'انتخاب کنید' ? "delete-hide" : ""} onClick={()=>setCompanytedad('انتخاب کنید')}><img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign" className="delete-icon"/>جمع تعداد کارمندان</h3>
             </div>
         </div>
         <div className="result-section">
@@ -389,6 +434,37 @@ const Home = (()=>{
                             : null) 
                     }else{
                         return(item.summary.companySummary.communications.email === null
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by company mark count -------------------
+                    if (companymarkcount === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else{
+                        return(companymarkcount <= item.certificatesAndTrademarks.certificates.length
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by company tolid mojavez -------------------
+                    if (companytolidmojavez === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else if(companytolidmojavez === 'دارد'){
+                        return(item.products.companyProductAndService.samtInfoList.length !== 0
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }else{
+                        return(item.summary.companySummary.communications.email === 0
+                            ? item.summary.companySummary.title.toLowerCase().includes(query)
+                            : null) 
+                    }
+                }).filter((item)=>{
+                    // filter by company heyat modire tedad -------------------
+                    if (companytedad === 'انتخاب کنید') {
+                        return item.summary.companySummary.title.toLowerCase().includes(query)
+                    }else{
+                        return(companytedad <= item.companyPeople.companyDirectors.length
                             ? item.summary.companySummary.title.toLowerCase().includes(query)
                             : null) 
                     }

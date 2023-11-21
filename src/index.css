@@ -514,36 +514,8 @@ body{
   cursor: pointer;
 }
 
-.filter2detail{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 96%;
-  background-color: rgba(217, 217, 217, 1);
-  border-radius: 10px;
-  padding: 1%;
-  font-size: 1.3rem;
-  cursor: pointer;
-  animation: blurAndFadeOut 0.5s forwards;
-}
-.filter2detail-hidden{
-  display: none;
-}
-.filter3detail{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 96%;
-  background-color: rgba(217, 217, 217, 1);
-  border-radius: 10px;
-  padding: 1%;
-  font-size: 1.3rem;
-  cursor: pointer;
-  animation: blurAndFadeOut 0.5s forwards;
-}
-.filter3detail-hidden{
-  display: none;
-}
+
+
 .filter4detail{
   display: flex;
   align-items: center;
@@ -601,10 +573,6 @@ body{
     filter: blur(0px);
     opacity: 1;
   }
-}
-
-.element {
-  animation: blurAndFadeOut 2s forwards;
 }
 .filter1row{
   display: flex;
@@ -680,6 +648,53 @@ body{
   margin-left: 10px;
 }
 /* first line end */
+/* second line  */
+.filter2detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1rem;
+  cursor: pointer;
+  animation: blurAndFadeOut 0.5s forwards;
+}
+.filter2detail-hidden{
+  display: none;
+}
+/* second line end */
+/* third line  */
+.filter3detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 96%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 1rem;
+  cursor: pointer;
+  animation: blurAndFadeOut 0.5s forwards;
+}
+.filter3detail-hidden{
+  display: none;
+}
+.search-box-filter{
+  border: none;
+  border-radius: 5px;
+  padding: 0.5%;
+  margin-right: 5%;
+  width: 20%;
+  direction: rtl;
+}
+.search-box-filter:focus{
+  outline: none;
+}
+/* third line end */
 @media only screen and (max-width: 750px) {
   
 }
