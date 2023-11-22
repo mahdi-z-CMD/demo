@@ -350,17 +350,18 @@ body{
   .container-texts{
     direction: rtl;
     display: flex;
-    width: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-self: flex-end;
+    align-items: flex-start;
+    justify-content: flex-start;
     line-height: 1px;
     text-align: center;
+    width: 100%;
   }
   .container-texts h2{
-    font-size: 2rem;
-    width: 100%;
+    display: flex;
+    font-size: 2.5rem;
     position: relative;
+    margin-right: 4%;
     top: 1vh;
   }
   .p1{
@@ -369,9 +370,14 @@ body{
     font-size: 1.2rem;
     text-align: center;
     line-height: 1.8rem;
+    margin-right: auto;
+    margin-left: auto;
   }
   .p2{
     font-size: 1rem;
+    margin-right: auto;
+    font-weight: bold;
+    margin-left: auto;
   }
   .searchbox{
     margin-top: 20%;
@@ -382,11 +388,11 @@ body{
     background-color: rgba(217, 217, 217, 1);
     direction: rtl;
     padding: 13px;
-    width: 55%;
+    width: 100%;
     margin-left: 5%;
   }
   #country{
-    margin-right: 10%;
+    margin-right: 2%;
     margin-left: 1%;
     border-radius: 3px;
     border: none;
@@ -396,21 +402,21 @@ body{
   }
   .cat{
     display: flex;
-    justify-content: center;
-    margin-left: -1%;
-    margin-top: 1%;
+    direction: rtl;
+    justify-content: flex-start;
+    margin-right: 8.5%;
+    margin-top: 4%;
+  }
+  .search-result{
+    margin-top: 2%;
+  }
+  .result-section{
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
   }
   .Cards{
-    display: flex;
-    direction: rtl;
-    margin-top: 1%;
-    cursor: pointer;
-    width: 360px;
-    border: 1px solid rgba(128, 128, 128, 0.4);
-    box-shadow: 2px 5px 4px #888888;
-    padding: 3%;
-    border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -501,7 +507,6 @@ body{
 }
 .select-category-icons h3:not(:first-child){
   margin-right: 3%;
-
 }
 .Filters-open-btn{
   background-color: rgba(34, 194, 231, 1);
@@ -548,9 +553,6 @@ body{
   font-size: 1.3rem;
   cursor: pointer;
 }
-
-
-
 .filter4detail{
   display: flex;
   align-items: center;
@@ -730,9 +732,38 @@ body{
   outline: none;
 }
 /* third line end */
+/* filter page tablet */
 @media only screen and (max-width: 750px) {
-  
+  .header-category-h1{
+    width: 100%;
+    margin-right: 2%;
+  }
+  .select-category-icons{
+    flex-wrap: wrap;
+    width: 108%;
+  }
+  .filterbox{
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+  .delete-cat{
+    margin-right: 8%;
+    margin-left: 8%;
+  }
+  .select-category-icons h3{
+    flex-basis: 25%;
+  }
+  .select-category-icons h3:first-child{
+    margin-right: 3%;
+  }
+  .filter1row span{
+    width: 30%;
+  }
+  .filter1row select{
+    width: 30%;
+  }
 }
+/* filter page tablet end  */
 /* Filter page end */
 /* company page */
 .company-container{

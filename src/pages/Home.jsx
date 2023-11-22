@@ -362,7 +362,7 @@ const Home = (()=>{
             </div>
         </div>
         <div className="searchbox">
-                <img width="47" height="47" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" className="search-icon"/>
+                <img width="46" height="46" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" className="search-icon"/>
                 <input type="text" placeholder="جست و جو برای شرکت ها و اشخاص " className="search-btn-home" onChange={e => setQuery(e.target.value)}/>
                 <select id="country" name="Country">
                     <option value="none">کشور را انتخاب کنید</option>
@@ -382,12 +382,12 @@ const Home = (()=>{
                 <h1>دسته بندی را انتخاب کنید :</h1>
             </div>
             <div className="select-category-icons">
-                <h3 className={catactive1 === true ? "select-category-icons-active":""} onClick={makeactive1}>شرکت ها <img width="45" height="45" src="https://img.icons8.com/plumpy/48/company.png" alt="company-icon" /></h3>
-                <h3 className={catactive2 === true ? "select-category-icons-active":""} onClick={makeactive2}>اشخاص <img width="45" height="45" src="https://img.icons8.com/material/48/user-male-circle--v1.png" alt="company-icon" /></h3>
-                <h3 className={catactive3 === true ? "select-category-icons-active":""} onClick={makeactive3}>آمار تجارت <img width="45" height="45" src="https://img.icons8.com/material-outlined/48/graph.png" alt="company-icon" /></h3>
-                <h3 className={catactive4 === true ? "select-category-icons-active":""} onClick={makeactive4}>محصولات <img width="45" height="45" src="https://img.icons8.com/windows/32/package--v1.png" alt="company-icon" /></h3>
-                <h3 className={catactive5 === true ? "select-category-icons-active":""} onClick={makeactive5}>آگهی رسمی <img width="45" height="45" src="https://img.icons8.com/pixels/32/news--v1.png" alt="company-icon" /></h3>
-                <h3 className={catactive6 === true ? "select-category-icons-active":""} onClick={makeactive6}>مالکیت های فکری <img width="45" height="45" src="https://img.icons8.com/material-two-tone/48/idea--v1.png" alt="company-icon" /></h3>
+                <h3 className={catactive1 === true ? "select-category-icons-active":""} onClick={makeactive1}>شرکت ها <img width="45" height="45" src="https://img.icons8.com/plumpy/96/company.png" alt="company-icon" /></h3>
+                <h3 className={catactive2 === true ? "select-category-icons-active":""} onClick={makeactive2}>اشخاص <img width="45" height="45" src="https://img.icons8.com/material/96/user-male-circle--v1.png" alt="company-icon" /></h3>
+                <h3 className={catactive3 === true ? "select-category-icons-active":""} onClick={makeactive3}>آمار تجارت <img width="45" height="45" src="https://img.icons8.com/material-outlined/96/graph.png" alt="company-icon" /></h3>
+                <h3 className={catactive4 === true ? "select-category-icons-active":""} onClick={makeactive4}>محصولات <img width="45" height="45" src="https://img.icons8.com/windows/96/package--v1.png" alt="company-icon" /></h3>
+                <h3 className={catactive5 === true ? "select-category-icons-active":""} onClick={makeactive5}>آگهی رسمی <img width="45" height="45" src="https://img.icons8.com/pixels/96/news--v1.png" alt="company-icon" /></h3>
+                <h3 className={catactive6 === true ? "select-category-icons-active":""} onClick={makeactive6}>مالکیت های فکری <img width="45" height="45" src="https://img.icons8.com/material-two-tone/96/idea--v1.png" alt="company-icon" /></h3>
             </div>
         </div>
         <Filterarea></Filterarea>
@@ -412,7 +412,7 @@ const Home = (()=>{
             <ul className='search-result'>
                 <HeaderCategory h1={selected === 2 ? "عنوان شرکت" : "عنوان شخص"} h2={selected === 2 ? "نوع شرکت" : "شناسه "} h3={selected === 2 ? "وضعیت شرکت" : "کد ملی"} h4={selected === 2 ? "مدیر عامل" : null}></HeaderCategory>
         {
-            selected === 2
+            catactive1 === true
             ?
                 data.filter((item)=>{
                     // filter by search ------------------
