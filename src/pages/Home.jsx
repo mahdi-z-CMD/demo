@@ -11,6 +11,12 @@ const Home = (()=>{
     const [filterh3, setFilterh3] = useState(false);
     const [filterh4, setFilterh4] = useState(false);
     const [filterh5, setFilterh5] = useState(false);
+    const [catactive1, setCatactive1] = useState(true);
+    const [catactive2, setCatactive2] = useState(false);
+    const [catactive3, setCatactive3] = useState(false);
+    const [catactive4, setCatactive4] = useState(false);
+    const [catactive5, setCatactive5] = useState(false);
+    const [catactive6, setCatactive6] = useState(false);
     const [query, setQuery] = useState("")
     const [faal, setfaal] = useState('انتخاب کنید')
     const [companytype, setCompanytype] = useState('انتخاب کنید')
@@ -297,8 +303,54 @@ const Home = (()=>{
     useEffect(() => {
         filterboxShow();
       }, []);
-    // filter functions --------------------------
-    // filter functions end -------------------
+    const makeactive1 = (()=>{
+       setCatactive1(true)
+       setCatactive2(false)
+       setCatactive3(false)
+       setCatactive4(false)
+       setCatactive5(false)
+       setCatactive6(false)
+    })
+    const makeactive2 = (()=>{
+        setCatactive1(false)
+        setCatactive2(true)
+        setCatactive3(false)
+        setCatactive4(false)
+        setCatactive5(false)
+        setCatactive6(false)
+     })
+    const makeactive3 = (()=>{
+       setCatactive1(false)
+       setCatactive2(false)
+       setCatactive3(true)
+       setCatactive4(false)
+       setCatactive5(false)
+       setCatactive6(false)
+    })
+    const makeactive4 = (()=>{
+        setCatactive1(false)
+        setCatactive2(false)
+        setCatactive3(false)
+        setCatactive4(true)
+        setCatactive5(false)
+        setCatactive6(false)
+     })
+    const makeactive5 = (()=>{
+        setCatactive1(false)
+        setCatactive2(false)
+        setCatactive3(false)
+        setCatactive4(false)
+        setCatactive5(true)
+        setCatactive6(false)
+     })
+    const makeactive6 = (()=>{
+       setCatactive1(false)
+       setCatactive2(false)
+       setCatactive3(false)
+       setCatactive4(false)
+       setCatactive5(false)
+       setCatactive6(true)
+    })
     return(
         <>
         <div className="container">
@@ -319,12 +371,25 @@ const Home = (()=>{
                 </select>
             </div>
             <div className="cat">
-            <input type="radio" value="ashkhas" name="cat" className="rb2" checked={selected === 1} onChange={onChange1}/> اشخاص
-            <input type="radio" value="sherkatha" name="cat" className="rb1" checked={selected === 2} onChange={onChange2}/> شرکت ها
+                    {/* <input type="radio" value="ashkhas" name="cat" className="rb1" checked={selected === 1} onChange={onChange1}/> اشخاص */}
+                    {/* <input type="radio" value="sherkatha" name="cat" className="rb2" checked={selected === 2} onChange={onChange2}/> شرکت ها */}
                 <div className="cat-1">
                     <a className="Filters-open-btn" onClick={filterboxShow}>جست و جوی پیشرفته</a>
                 </div>
             </div>
+        <div className={filterbox === false ? "header-category-hide" : "header-category"}>
+            <div className="header-category-h1">
+                <h1>دسته بندی را انتخاب کنید :</h1>
+            </div>
+            <div className="select-category-icons">
+                <h3 className={catactive1 === true ? "select-category-icons-active":""} onClick={makeactive1}>شرکت ها <img width="45" height="45" src="https://img.icons8.com/plumpy/48/company.png" alt="company-icon" /></h3>
+                <h3 className={catactive2 === true ? "select-category-icons-active":""} onClick={makeactive2}>اشخاص <img width="45" height="45" src="https://img.icons8.com/material/48/user-male-circle--v1.png" alt="company-icon" /></h3>
+                <h3 className={catactive3 === true ? "select-category-icons-active":""} onClick={makeactive3}>آمار تجارت <img width="45" height="45" src="https://img.icons8.com/material-outlined/48/graph.png" alt="company-icon" /></h3>
+                <h3 className={catactive4 === true ? "select-category-icons-active":""} onClick={makeactive4}>محصولات <img width="45" height="45" src="https://img.icons8.com/windows/32/package--v1.png" alt="company-icon" /></h3>
+                <h3 className={catactive5 === true ? "select-category-icons-active":""} onClick={makeactive5}>آگهی رسمی <img width="45" height="45" src="https://img.icons8.com/pixels/32/news--v1.png" alt="company-icon" /></h3>
+                <h3 className={catactive6 === true ? "select-category-icons-active":""} onClick={makeactive6}>مالکیت های فکری <img width="45" height="45" src="https://img.icons8.com/material-two-tone/48/idea--v1.png" alt="company-icon" /></h3>
+            </div>
+        </div>
         <Filterarea></Filterarea>
         <div className={filterbox === false ? "delete-cat-hide" : "delete-cat"}>
             <h2>فیلتر های اعمال شده :</h2>
