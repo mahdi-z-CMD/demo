@@ -45,7 +45,7 @@ const Home = (()=>{
                 <span className="spans avali-span">{props.name}</span>
                 <span className="spans">{props.id}</span>
                 <span className="spans">{props.status}</span>
-                <span className="spans">{props.ceo}</span>
+                <span className="spans ceospan">{props.ceo}</span>
             </div>
         )
     })
@@ -68,7 +68,7 @@ const Home = (()=>{
                 {
                     props.h4 === null 
                     ? null
-                    : <span>{props.h4}</span>
+                    : <span className="ceospan">{props.h4}</span>
                 }
                 
                 </div>
@@ -362,7 +362,7 @@ const Home = (()=>{
             </div>
         </div>
         <div className="searchbox">
-                <img width="46" height="46" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" className="search-icon"/>
+                <img width="45" height="45" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" className="search-icon"/>
                 <input type="text" placeholder="جست و جو برای شرکت ها و اشخاص " className="search-btn-home" onChange={e => setQuery(e.target.value)}/>
                 <select id="country" name="Country">
                     <option value="none">کشور را انتخاب کنید</option>
@@ -374,7 +374,7 @@ const Home = (()=>{
                     {/* <input type="radio" value="ashkhas" name="cat" className="rb1" checked={selected === 1} onChange={onChange1}/> اشخاص */}
                     {/* <input type="radio" value="sherkatha" name="cat" className="rb2" checked={selected === 2} onChange={onChange2}/> شرکت ها */}
                 <div className="cat-1">
-                    <a className="Filters-open-btn" onClick={filterboxShow}>جست و جوی پیشرفته</a>
+                    <a className="Filters-open-btn" onClick={filterboxShow}>فیلتر</a>
                 </div>
             </div>
         <div className={filterbox === false ? "header-category-hide" : "header-category"}>
@@ -410,7 +410,7 @@ const Home = (()=>{
         </div>
         <div className="result-section">
             <ul className='search-result'>
-                <HeaderCategory h1={selected === 2 ? "عنوان شرکت" : "عنوان شخص"} h2={selected === 2 ? "نوع شرکت" : "شناسه "} h3={selected === 2 ? "وضعیت شرکت" : "کد ملی"} h4={selected === 2 ? "مدیر عامل" : null}></HeaderCategory>
+                <HeaderCategory h1={catactive1 === true ? "عنوان شرکت" : "عنوان شخص"} h2={catactive1 === true ? "نوع شرکت" : "شناسه "} h3={catactive1 === true ? "وضعیت شرکت" : "کد ملی"} h4={catactive1 === true ? "مدیر عامل" : null}></HeaderCategory>
         {
             catactive1 === true
             ?

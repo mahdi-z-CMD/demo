@@ -21,6 +21,7 @@ body{
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  height: 7vh;
   gap: 2rem;
   padding: 0 2rem;
   padding-top: 1%;
@@ -144,6 +145,31 @@ body{
   .login-area-show{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    list-style: none;
+    background-color: white;
+    height: 50vh;
+    position: relative;
+    top: 360%;
+    right: 15%;
+    z-index: 10;
+    padding-right: 5%;
+  }
+  .login-area-show a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    direction: rtl;
+    text-decoration: none;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding: 10px;
+    width: 110%;
+    margin-right: 15px;
+  }
+  .icon-nav{
+    display: none;
   }
   .login-area-icon{
     display: block;
@@ -361,7 +387,7 @@ body{
     display: flex;
     font-size: 2.5rem;
     position: relative;
-    margin-right: 4%;
+    margin-right: 3%;
     top: 1vh;
   }
   .p1{
@@ -424,7 +450,7 @@ body{
 /* container responsive mobile  */
 @media only screen and (max-width: 435px) {
   .container-texts h2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     width: 100%;
     position: relative;
     top: 1vh;
@@ -439,7 +465,7 @@ body{
     font-size: 0.8rem;
   }
   .searchbox{
-    margin-top: 15%;
+    margin-top: 30%;
   }
   .search-btn-home{
     border-radius: 2px;
@@ -447,24 +473,50 @@ body{
     background-color: rgba(217, 217, 217, 1);
     direction: rtl;
     padding: 13px;
-    width: 55%;
+    width: 80%;
     margin-left: 5%;
   }
   #country{
     width: 20%;
-    margin-left: 1%;
+    margin-left: 2%;
     font-size: 0.6rem;
     border-radius: 3px;
     border: none;
     background-color: rgba(217, 217, 217, 1);
     direction: rtl;
-    padding: 13px;
+    padding: 14px;
   }
   .cat{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: -1%;
-    margin-top: 1%;
+    margin-top: 5%;
+  }
+  .cat .Filters-open-btn{
+    background-color: rgba(34, 194, 231, 1);
+    text-decoration: none;
+    color: white;
+    direction: rtl;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .result-section{
+    margin-top: 5%;
+  }
+  .result-header-row{
+    font-size: 0.7rem;
+  }
+  .Cards{
+    font-size: 0.7rem;
+  }
+  .icon-company-row{
+    width: 20px;
+    height: 20px;
+  }
+  .search-result{
+    padding-right: 15px;
   }
 }
 /* container mobile end */
@@ -764,6 +816,47 @@ body{
   }
 }
 /* filter page tablet end  */
+/* fitler mobile  */
+@media only screen and (max-width: 435px){
+  .header-category-h1{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .select-category-icons h3{
+    font-size: 0.8rem;
+    height: 12vh;
+  }
+  .select-category-icons h3 img{
+    width: 30px;
+    height: 30px;
+  }
+  .select-filter h1{
+    font-size: 0.9rem;
+  }
+  .filter1row{
+    font-size: 0.8rem;
+  }
+  .filter1row span{
+    width: 40%;
+  }
+  .filter1row select{
+    width: 45%;
+    font-size: 0.7rem;
+  }
+  .delete-cat h2{
+    font-size: 0.9rem;
+    margin-right: 4%;
+  }
+  .delete-cat h3{
+    font-size: 0.8rem;
+  }
+  .ceospan{
+    display: none;
+  }
+}
+/* filter mobile end */
 /* Filter page end */
 /* company page */
 .company-container{
