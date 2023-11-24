@@ -385,7 +385,7 @@ body{
   }
   .container-texts h2{
     display: flex;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     position: relative;
     margin-right: 3%;
     top: 1vh;
@@ -858,13 +858,15 @@ body{
 }
 /* filter mobile end */
 /* Filter page end */
+
+
 /* company page */
 .company-container{
   height: 100vh;
   width: 100%;
 }
 .company-header{
-  height: 35vh;
+  height: auto;
   width: 80%;
   direction: rtl;
   margin-top: 1%;
@@ -872,6 +874,7 @@ body{
   margin-left: auto;
   background-color: white;
   border-radius: 10px;
+  padding-bottom: 2%;
 }
 .company-header-title{
   display: flex;
@@ -916,7 +919,7 @@ body{
   background-color: rgba(34, 194, 231, 1);
   padding: 0.7%;
   border-radius: 5px;
-  width: 15%;
+  width: 20%;
   margin-right: 2%;
   margin-top: 2%;
   display: flex;
@@ -935,7 +938,7 @@ body{
   direction: rtl;
   margin-right: auto;
   margin-left: auto;
-  height: 40vh;
+  height: auto;
   width: 80%;
   background-color: white;
   border-radius: 10px;
@@ -946,12 +949,13 @@ body{
   justify-content: flex-start;
   width: 100%;
   flex-wrap: wrap;
-  margin-right: 12%;
+  margin-right: 5%;
 }
 .sabti-text{
   display: flex;
   direction: rtl;
   margin-top: 4%;
+  width: 20%;
   flex-basis: 30%;
   font-size: 1rem;
   margin-right: 2.5%;
@@ -963,6 +967,7 @@ body{
   flex-basis: 90%;
   font-size: 1rem;
   margin-right: 2.5%;
+  padding-bottom: 1%;
 }
 .sabti-icon{
   margin-left: 10px;
@@ -977,7 +982,7 @@ body{
   direction: rtl;
   margin-right: auto;
   margin-left: auto;
-  height: 40vh;
+  height: auto;
   width: 80%;
   background-color: white;
   border-radius: 10px;
@@ -985,7 +990,7 @@ body{
 }
 .title-cat{
   position: relative;
-  bottom: 15%;
+  bottom: 20px;
   margin-right: 2%;
   background-color: white;
   border-radius: 10px;
@@ -1014,10 +1019,210 @@ body{
 }
 .ceo-pic{
   position: relative;
-  bottom: 15%;
+  bottom: 10px;
 }
 .modramel{
   color: rgba(237, 125, 49, 1);
 }
+.sabti-ashkhas-header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 3%;
+  width: 95%;
+  border-bottom: 1px solid black;
+}
+.header-row-ashkhas{
+  display: flex;
+  direction: rtl;
+  justify-content: flex-start;
+  width: 90%;
+  font-size: 0.7rem;
+  margin-right: 1%;
+}
+.header-row-ashkhas h1:not(:first-child){
+  width: 30%;
+  margin-right: 10%;
+}
+.header-row-ashkhas h1:first-child{
+  margin-right: 1%;
+  width: 45%;
+}
+.sabti-ashkhas-members{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 3%;
+  border-bottom: 1px solid black;
+  width: 95%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+.members-row-ashkhas{
+  display: flex;
+  direction: rtl;
+  justify-content: flex-start;
+  width: 90%;
+  font-size: 0.5rem;
+  animation: blurAndFadeOut .3s forwards;
+}
+.members-row-ashkhas h1:not(:first-child){
+  width: 30%;
+  margin-right: 10%;
+}
+.memeber-icon{
+  margin-left: 3%;
+  position: relative;
+  bottom: 15%;
+}
+.members-row-ashkhas h1:first-child{
+  margin-right: 1%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.icon-sematghabli{
+  width: 40px;
+  height: 40px;
+  margin-right: 20%;
+  background-image: url(pages/chevron-down-outline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.new-class{
+  background-image: url(pages/chevron-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bishtarneshon-ashkhas{
+   width: 95%;
+   font-size: 0.6rem;
+   display: flex;
+   direction: rtl;
+   justify-content: flex-end;
+}
+.bishtarneshon-ashkhas h1{
+  margin-top: 3%;
+  padding: 1%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* ashkhas end */
+
+/* company page tablet */
+@media only screen and (max-width: 750px) {
+  .sabti-h1{
+    font-size: 1.2rem;
+  }
+  .select-info{
+    font-size: 0.8rem;
+  }
+  .icon8{
+    width: 40px;
+    height: 40px;
+  }
+  .sabti-text{
+    font-size: 0.7rem;
+  }
+  .sabti-text:last-child{
+    font-size: 0.7rem;
+  }
+  .sabti-icon{
+    width: 15px;
+    height: 15px;
+  }
+  .title-ceo-pic{
+    font-size: 0.6rem;
+  }
+  .ceo-pic{
+    width: 60px;
+    height: 60px;
+  }
+  .header-row-ashkhas{
+    font-size: 0.5rem;
+  }
+  .members-row-ashkhas{
+    font-size: 0.4rem;
+  }
+  .memeber-icon{
+    width: 35px;
+    height: 35px;
+  }
+  .more-btn-ashkhas{
+    font-size: 1rem;
+  }
+  .icon-sematghabli{
+    width: 25px;
+    height: 25px;
+  }
+}
+/* company page tablet end */
+/* company page mobile */
+@media only screen and (max-width: 435px){
+  .sabti-text{
+    width: 80%;
+    flex-basis: 80%;
+  }
+  .save-icon{
+    margin-right: 80%;
+    width: 40px;
+    height: 40px;
+  }
+  .sabti-h1{
+    font-size: 1.2rem;
+  }
+  .title-names h1{
+    font-size: 1.2rem;
+  }
+  .select-info{
+    font-size: 0.7rem;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+  .select-info-btn{
+    width: 30%;
+  }
+  .icon8{
+    width: 35px;
+    height: 35px;
+  }
+  .sabti-text{
+    font-size: 0.8rem;
+  }
+  .sabti-text:last-child{
+    font-size: 0.7rem;
+  }
+  .sabti-icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 1%;
+  }
+  .title-ceo-pic{
+    font-size: 0.6rem;
+  }
+  .ceo-pic{
+    width: 60px;
+    height: 60px;
+  }
+  .header-row-ashkhas{
+    font-size: 0.5rem;
+  }
+  .members-row-ashkhas{
+    font-size: 0.4rem;
+  }
+  .memeber-icon{
+    width: 35px;
+    height: 35px;
+  }
+  .more-btn-ashkhas{
+    font-size: 1rem;
+  }
+  .icon-sematghabli{
+    width: 25px;
+    height: 25px;
+  }
+}
 /* company page end */
