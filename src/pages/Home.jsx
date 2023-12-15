@@ -4,6 +4,7 @@ import data from './companytest.json'
 import dataperson from './persontest.json'
 import arrowdown from './chevron-down-outline.svg'
 import arrowup from './chevron-up.svg'
+import axsyaro from '../svgs/whoWeAre.png'
 // import data from '../companyjs.json'
 const Home = (()=>{
     const [filterh1, setFilterh1] = useState(false);
@@ -354,11 +355,12 @@ const Home = (()=>{
     return(
         <>
         <div className="container">
-            <div className="container-texts">
-                <h2>جایی برای ارتباط و تحلیل کسب و کار ها</h2>
-                <p className="p1">اطلاعات رسمی تمام شرکت های ثبت شده و افراد مرتبط 
-در ایران و امارات متحده عربی را میتوانید یکجا ببنید</p>
-                <p className="p2">این داده هایی است که می توانید به آن اعتماد کنید.</p>
+            <div className="card-vip">
+                <img src={axsyaro} alt="taraf" width="400" height="300"/>
+                <div className="vip-text">
+                    <h1>ویژه چیست ؟</h1>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
             </div>
         </div>
         <div className="searchbox">

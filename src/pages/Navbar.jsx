@@ -9,16 +9,29 @@ const Navbar = (()=>{
             setresponsive(null)
         }
     })
+    const [isHovered, setHovered] = useState(false);
     return(
         <nav className="nav">
-            <Link to="demo" className="site-title">Logo</Link>
-                <img src={responsive === 1 ? "https://img.icons8.com/ios-filled/100/delete-sign--v1.png": "https://img.icons8.com/ios/50/menu--v1.png"} alt="menu--v1" className="login-area-icon" onClick={reschange}/>
-            <ul className={responsive === null ? "login-area" : "login-area-show"}>
-                <li><Link to="demo/more/" className="login-btn"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/long-arrow-left.png" alt="long-arrow-left" className="icon-nav"/>ورود</Link></li>
-                <li><Link to="demo/login/" className="tarefe-btn"><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/rocket.png" alt="rocket" className="icon-nav"/>تعرفه اشتراک ها</Link></li>
+            <ul className="nav-lists">
+                <li>خانه</li>
+                <li onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>خدمات</li>
+                {isHovered && (
+                    <ul className="nav-list-hover" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+                    <ol>ویژه</ol>
+                    <ol>تعرفه</ol>
+                    <ol>شرکت ها</ol>
+                    </ul>
+                )}
+                <li>تعرفه</li>
+                <li>خدمات</li>
+                <li>تعرفه</li>
+                <li>خدمات</li>
+                <li>تعرفه</li>
+                <li>خدمات</li>
+                <li>ورود</li>
             </ul>
         </nav>
     )
 })
 
-export default Navbar
+export default Navbar;
