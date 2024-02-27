@@ -1,9 +1,9 @@
 import Companypage from "./pages/Companyspage";
 import {Route, Routes} from 'react-router-dom'
 import Navbar from "./pages/Navbar";
-import Home from './pages/Home'
-import More from './pages/More'
-import Login from './pages/Login'
+import Home from './pages/Home';
+import More from './pages/More';
+import Login from './pages/Login';
 import Search from "./pages/Search";
 import Person from "./pages/Person";
 function App() {
